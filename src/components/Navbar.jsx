@@ -1,14 +1,27 @@
-import React, {useState} from 'react'
-import { Link, useMatch, useResolvedPath, NavLink } from 'react-router-dom'
-import { FaBars, FaTimes, } from "react-icons/fa";
+import React, { useState } from "react";
+import { Link, useMatch, useResolvedPath, NavLink } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import useScrollPosition from "../hooks/useScrollPosition";
 
 const Navbar = () => {
+  const scrollPosition = useScrollPosition();
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+
+  const classNames = (...classes) => classes.filter(Boolean).join(" ");
+
   return (
-    <nav className="bg-gray-800 text-white flex justify-between items-stretch gap-8 p-4">
-      <Link to="/">Salt and Spoon</Link>
-      <ul className="hidden md:flex gap-1">
+    <nav className="bg-black text-white flex justify-between items-stretch gap-8 px-4 sticky top-0">
+      <Link
+        className={classNames(
+          scrollPosition > 0 ? "block" : "opacity-0",
+          "transition-opacity duration-300 font-rubik text-3xl py-5"
+        )}
+        to="/"
+      >
+        SALT & SPOON
+      </Link>
+      <ul className="hidden md:flex gap-1 items-center">
         <CustomLink className="h-100 hover:bg-gray-300" to="/">
           Home
         </CustomLink>
@@ -22,7 +35,7 @@ const Navbar = () => {
       {/*hamburger*/}
       <div
         onClick={handleClick}
-        className="md:hidden z-10"
+        className="md:hidden pt-5 z-10"
         style={{ fontSize: "2rem" }}
       >
         {!nav ? <FaBars /> : <FaTimes />}
@@ -32,7 +45,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "fixed top-0 left-0 w-full h-screen bg-black object-cover roddenberry flex flex-col justify-center items-center"
+            : "fixed top-0 left-0 w-full h-screen bg-black object-cover flex flex-col pt-36 items-center"
         }
       >
         <li className="py-6 text-4xl">
@@ -55,11 +68,11 @@ const Navbar = () => {
       </ul>
     </nav>
   );
-}
+};
 
-function CustomLink({to, children, ...props}) {
+function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({path: resolvedPath.pathname, end: true});
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
   return (
     <li className={isActive ? "active" : ""}>
@@ -67,7 +80,7 @@ function CustomLink({to, children, ...props}) {
         {children}
       </Link>
     </li>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
