@@ -11,7 +11,12 @@ const Navbar = () => {
   const classNames = (...classes) => classes.filter(Boolean).join(" ");
 
   return (
-    <nav className="bg-black text-white flex justify-between items-stretch gap-8 px-4 sticky top-0">
+    <nav
+      className={classNames(
+        scrollPosition > 0 ? "bg-blue-400" : "bg-blue-300",
+        "duration-300 text-white flex gap-8 px-4 sticky top-0"
+      )}
+    >
       <Link
         className={classNames(
           scrollPosition > 0 ? "block" : "opacity-0",
@@ -21,21 +26,24 @@ const Navbar = () => {
       >
         SALT & SPOON
       </Link>
-      <ul className="hidden md:flex gap-1 items-center">
-        <CustomLink className="h-100 hover:bg-gray-300" to="/">
+      <ul className="hidden md:flex gap-5 ml-auto py-5 text-xl">
+        <CustomLink className="hover:underline duration-1000 underline-offset-8" to="/">
           Home
         </CustomLink>
-        <CustomLink className="h-100 hover:bg-gray-300" to="/about">
+        <CustomLink className="hover:underline underline-offset-8" to="/about">
           About
         </CustomLink>
-        <CustomLink className="hover:bg-gray-300" to="/contact">
+        <CustomLink
+          className="hover:underline underline-offset-8"
+          to="/contact"
+        >
           Contact
         </CustomLink>
       </ul>
       {/*hamburger*/}
       <div
         onClick={handleClick}
-        className="md:hidden pt-5 z-10"
+        className="md:hidden ml-auto py-5 z-10"
         style={{ fontSize: "2rem" }}
       >
         {!nav ? <FaBars /> : <FaTimes />}

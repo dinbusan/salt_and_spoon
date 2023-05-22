@@ -3,9 +3,9 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="bg-black w-screen flex">
-        <div className="img-container lg:pt-2 pb-10 w-3/4 sm:w-2/3 md:w-2/5 lg:w-1/4 mx-auto">
-          <img className="" src="./assets/logo.jpeg" alt="" />
+      <div className="bg-blue-300 w-screen flex">
+        <div className="img-container lg:pt-2 pb-10 w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/5 mx-auto">
+          <img className="fill-white" src="./assets/invert.png" alt="" />
         </div>
       </div>
       <p>
