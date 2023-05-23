@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 li.active {
-  background-color: #555;
+  color: rgb(48, 48, 149);
 }

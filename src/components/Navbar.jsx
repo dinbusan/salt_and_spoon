@@ -46,7 +46,7 @@ const Navbar = () => {
       )}
       <ul className="hidden md:flex gap-5 ml-auto py-5 text-xl">
         <CustomLink
-          className="hover:underline duration-1000 underline-offset-8"
+          className="hover:underline active:underline duration-1000 underline-offset-8"
           to="/"
         >
           Home
