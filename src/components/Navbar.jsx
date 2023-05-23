@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { Link, useMatch, useResolvedPath, NavLink } from "react-router-dom";
+import {
+  Link,
+  useMatch,
+  useResolvedPath,
+  NavLink,
+  useLocation,
+} from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import useScrollPosition from "../hooks/useScrollPosition";
 
@@ -8,26 +14,41 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   const classNames = (...classes) => classes.filter(Boolean).join(" ");
 
   return (
     <nav
       className={classNames(
-        scrollPosition > 0 ? "bg-blue-400" : "bg-blue-300",
-        "duration-300 text-white flex gap-8 px-4 sticky top-0"
+        scrollPosition > 0 ? "shadow" : "",
+        "bg-blue-300 duration-300 text-white flex gap-8 px-4 sticky top-0"
       )}
     >
-      <Link
-        className={classNames(
-          scrollPosition > 0 ? "block" : "opacity-0",
-          "transition-opacity duration-300 font-rubik text-3xl py-5"
-        )}
-        to="/"
-      >
-        SALT & SPOON
-      </Link>
+      {currentPath === "/" ? (
+        <Link
+          className={classNames(
+            currentPath === "/" && scrollPosition > 0 ? "block" : "opacity-0",
+            "transition-opacity duration-300 font-rubik text-3xl py-5"
+          )}
+          to="/"
+        >
+          SALT & SPOON
+        </Link>
+      ) : (
+        <Link
+          className="block transition-opacity duration-300 font-rubik text-3xl py-5"
+          to="/"
+        >
+          SALT & SPOON
+        </Link>
+      )}
       <ul className="hidden md:flex gap-5 ml-auto py-5 text-xl">
-        <CustomLink className="hover:underline duration-1000 underline-offset-8" to="/">
+        <CustomLink
+          className="hover:underline duration-1000 underline-offset-8"
+          to="/"
+        >
           Home
         </CustomLink>
         <CustomLink className="hover:underline underline-offset-8" to="/about">
