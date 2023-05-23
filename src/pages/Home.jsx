@@ -9,7 +9,7 @@ const Home = () => {
         </div>
       </div>
       <div className="w-screen ">
-        <p className="px-20 py-10">
+        <p className="px-10 md:px-20 py-5 md:py-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
           voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Facilis, optio. Praesentium amet excepturi officia quis atque sapiente
@@ -48,74 +48,74 @@ const Home = () => {
           placeat, provident nobis.
         </p>
         <div className="img-container grid grid-cols-2 md:grid-cols-5 gap-0">
-          <div className="aspect-square">
+          <div className="aspect-square card-zoom">
             <img
               src="./assets/img1.jpeg"
               alt=""
-              className="object-cover object-center w-full h-full hover:scale-105 duration-100"
+              className="card-zoom-image object-cover object-center w-full h-full "
             />
           </div>
-          <div className="aspect-square">
+          <div className="aspect-square card-zoom">
             <img
               src="./assets/img2.jpeg"
               alt=""
-              className="object-cover object-center w-full h-full hover:scale-105 duration-100"
+              className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
-          <div className="aspect-square">
+          <div className="aspect-square card-zoom">
             <img
               src="./assets/img3.jpeg"
               alt=""
-              className="object-cover object-center w-full h-full hover:scale-105 duration-100"
+              className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
-          <div className="aspect-square">
+          <div className="aspect-square card-zoom">
             <img
               src="./assets/img4.jpeg"
               alt=""
-              className="object-cover object-center w-full h-full hover:scale-105 duration-100"
+              className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
-          <div className="aspect-square">
+          <div className="aspect-square card-zoom">
             <img
               src="./assets/img5.jpeg"
               alt=""
-              className="object-cover object-center w-full h-full hover:scale-105 duration-100"
+              className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
-          <div className="aspect-square">
+          <div className="aspect-square card-zoom">
             <img
               src="./assets/img6.jpeg"
               alt=""
-              className="object-cover object-center w-full h-full hover:scale-105 duration-100"
+              className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
-          <div className="aspect-square">
+          <div className="aspect-square card-zoom">
             <img
               src="./assets/img7.jpeg"
               alt=""
-              className="object-cover object-center w-full h-full hover:scale-105 duration-100"
+              className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
-          <div className="aspect-square">
+          <div className="aspect-square card-zoom">
             <img
               src="./assets/img8.jpeg"
               alt=""
-              className="object-cover object-center w-full h-full hover:scale-105 duration-100"
+              className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
-          <div className="aspect-square">
+          <div className="aspect-square card-zoom">
             <img
               src="./assets/img9.jpeg"
               alt=""
-              className="object-cover object-center w-full h-full hover:scale-105 duration-100"
+              className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
-          <div className="aspect-square">
+          <div className="aspect-square card-zoom">
             <img
               src="./assets/img10.jpeg"
               alt=""
-              className="object-cover object-center w-full h-full hover:scale-105 duration-100"
+              className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
         </div>
