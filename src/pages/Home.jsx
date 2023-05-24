@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Logo from "../assets/invert.png";
 
 const Home = () => {
-  let { scrollYProgress } = useScroll();
-  let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  let ref = useRef(null);
+  let { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  });
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
-    <div className="relative">
-      <motion.div className=" relative" style={{ y }}>
-        <div className="bg-cupcakes w-screen bg-fixed bg-no-repeat bg-cover bg-center">
-          <div className="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 py-2 xl:py-5 mx-auto">
-            <img className="logo" src={Logo} alt="" />
+    <div  className="relative">
+      <div ref={ref}>
+        <motion.div className=" relative" style={{ y }}>
+          <div className="bg-cupcakes w-screen bg-fixed bg-no-repeat bg-cover bg-center">
+            <div className="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 py-2 xl:py-5 mx-auto">
+              <img className="logo" src={Logo} alt="" />
+            </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
       <div className="z-1 relative w-screen bg-blue-50">
         <div className=" w-5/6 my-5 md:my-10 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
           <div className="md:col-span-3 py-5 md:pt-10 xl:pt-20">
