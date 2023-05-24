@@ -9,23 +9,24 @@ const Home = () => {
         </div>
       </div>
       <div className="w-5/6 my-5 md:my-10 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
-        <p className="md:col-span-3 py-5 px-2 xl:px-36 md:py-10 flex items-center justify-center">
+        <h1 className="font-shadows text-4xl text-center justify-center flex py-5 md:py-10">
+          Welcome to <br /> Salt & Spoon!
+        </h1>
+        <p className="font-thasadith text-xl md:col-span-3 px-2 pb-2 xl:px-36 text-center flex items-center justify-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
           voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Facilis, optio. Praesentium amet excepturi officia quis atque sapiente
-          ea animi nulla? Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit. Ex esse a earum iusto molestias harum, suscipit odit error
-          asperiores mollitia ipsam modi commodi repellendus omnis sed assumenda
-          voluptate architecto odio eum! Recusandae quos et delectus aut,
-          deserunt accusantium adipisci aperiam enim laboriosam aliquam rem
-          repellat architecto assumenda itaque explicabo perferendis magnam
-          culpa consectetur iure, animi eius nemo porro molestiae maxime.
+          ea animi nulla?
         </p>
         <div className="welcome-image md:col-span-2 flex">
-          <img src="./assets/welcome-img.jpeg" alt="" className="object-cover" />
+          <img
+            src="./assets/welcome-img.jpeg"
+            alt=""
+            className="object-cover"
+          />
         </div>
       </div>
-      <div className="img-container w-screen grid grid-cols-2 md:grid-cols-5 gap-0">
+      <div className="img-container gap-1 px-2 md:px-0 w-screen grid grid-cols-2 md:grid-cols-5 md:gap-0">
         <div className="aspect-square card-zoom">
           <img
             src="./assets/img1.jpeg"

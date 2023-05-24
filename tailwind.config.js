@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         rubik: ["Rubik Dirt", "cursive"],
+        shadows: ["Shadows Into Light Two", "cursive"],
+        thasadith: ["Thasadith", "sans-serif"],
       },
       backgroundImage: {
         cupcakes: 'url("./assets/cupcakes_landscape_saturation.jpeg")',
