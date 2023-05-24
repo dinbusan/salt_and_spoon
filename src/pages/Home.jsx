@@ -9,7 +9,7 @@ const Home = () => {
         </div>
       </div>
       <div className="w-5/6 my-5 md:my-10 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
-        <p className="md:col-span-3 py-5 px-2 xl:px-36 md:py-10">
+        <p className="md:col-span-3 py-5 px-2 xl:px-36 md:py-10 flex items-center justify-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
           voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Facilis, optio. Praesentium amet excepturi officia quis atque sapiente
