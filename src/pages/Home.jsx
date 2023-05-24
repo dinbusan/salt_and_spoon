@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Logo from "../assets/invert.png";
+import Welcome from "../assets/welcome-img.jpeg";
 
 const Home = () => {
   let ref = useRef(null);
@@ -14,7 +15,7 @@ const Home = () => {
     <div  className="relative">
       <div ref={ref}>
         <motion.div className=" relative" style={{ y }}>
-          <div className="bg-cupcakes w-screen bg-fixed bg-no-repeat bg-cover bg-center">
+          <div className="bg-bluecake w-screen bg-fixed bg-no-repeat bg-cover bg-center">
             <div className="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 py-2 xl:py-5 mx-auto">
               <img className="logo" src={Logo} alt="" />
             </div>
@@ -36,7 +37,7 @@ const Home = () => {
           </div>
           <div className="welcome-image md:col-span-2 flex">
             <img
-              src="src/assets/welcome-img.jpeg"
+              src={Welcome}
               alt=""
               className="object-cover"
             />
