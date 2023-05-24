@@ -46,18 +46,21 @@ const Navbar = () => {
           SALT & SPOON
         </Link>
       )}
-      <ul className="hidden md:flex gap-5 ml-auto py-5 text-xl">
+      <ul className="hidden font-thasadith md:flex gap-8 ml-auto py-5 text-2xl">
         <CustomLink
-          className="hover:underline active:underline duration-1000 underline-offset-8"
+          className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-blue-700"
           to="/"
         >
           Home
         </CustomLink>
-        <CustomLink className="hover:underline underline-offset-8" to="/about">
+        <CustomLink
+          className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-blue-700"
+          to="/about"
+        >
           About
         </CustomLink>
         <CustomLink
-          className="hover:underline underline-offset-8"
+          className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-blue-700"
           to="/contact"
         >
           Contact
@@ -76,7 +79,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "fixed top-0 left-0 w-full h-screen bg-black object-cover flex flex-col pt-36 items-center"
+            : "fixed top-0 font-thasadith left-0 w-full h-screen bg-black object-cover flex flex-col pt-36 items-center"
         }
       >
         <li className="py-6 text-4xl">
