@@ -9,7 +9,7 @@ export default {
         thasadith: ["Thasadith", "sans-serif"],
       },
       backgroundImage: {
-        cupcakes: 'url("./assets/cupcakes_landscape_saturation.jpeg")',
+        cupcakes: 'url("./assets/img8.jpeg")',
       },
     },
   },
