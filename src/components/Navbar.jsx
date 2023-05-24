@@ -22,8 +22,8 @@ const Navbar = () => {
   return (
     <nav
       className={classNames(
-        scrollPosition > 0 ? "shadow" : "bg-white text-black",
-        "bg-blue-300 duration-300 text-white flex gap-8 px-4 sticky z-30 top-0"
+        scrollPosition > 0 ? "shadow text-white" : "bg-white text-black",
+        "bg-blue-300 duration-300 flex gap-8 px-4 sticky z-30 top-0"
       )}
     >
       {currentPath === "/" ? (

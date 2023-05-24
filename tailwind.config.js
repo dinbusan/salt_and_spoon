@@ -8,7 +8,8 @@ export default {
       },
       backgroundImage: {
         'cupcakes' : 'url("./assets/cupcakes_landscape.jpeg")'
-      }
+      },
+      
     },
   },
   plugins: [],

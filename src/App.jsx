@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 function App() {
 
   return (
-  <div className="">
+  <div className="bg-sky-50">
 <Navbar />
 
   <Routes>

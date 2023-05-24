@@ -3,12 +3,12 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="bg-cupcakes opacity-70 w-screen bg-fixed bg-no-repeat bg-cover bg-center">
+      <div className="bg-cupcakes w-screen bg-fixed bg-no-repeat bg-cover bg-center">
         <div className="img-container lg:pt-2 pb-10 w-3/4 sm:w-2/3 md:w-2/5 mx-auto">
-          <img className="fill-white" src="./assets/invert.png" alt="" />
+          <img className="" src="./assets/invert.png" alt="" />
         </div>
       </div>
-      <div className="w-2/3 mx-auto grid grid-cols-5 py-5 md:py-10">
+      <div className="w-5/6 px-36 my-10 mx-auto grid grid-cols-5 py-5 md:py-10 bg-white">
         <p className="col-span-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
           voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
