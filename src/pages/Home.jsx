@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
       <div className="bg-cupcakes w-screen bg-fixed bg-no-repeat bg-cover bg-center">
-        <div className="img-container  w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 mx-auto">
+        <div className="img-container  w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 xl:py-5 mx-auto">
           <img className="logo" src="./assets/invert.png" alt="" />
         </div>
       </div>
