@@ -5,6 +5,9 @@ export default {
     extend: {
       fontFamily: {
         'rubik': ['Rubik Dirt', 'cursive']
+      },
+      backgroundImage: {
+        'cupcakes' : 'url("./assets/cupcakes_landscape.jpeg")'
       }
     },
   },

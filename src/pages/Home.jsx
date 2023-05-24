@@ -3,13 +3,13 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="bg-blue-300 w-screen flex">
-        <div className="img-container lg:pt-2 pb-10 w-3/4 sm:w-2/3 md:w-2/5 lg:w-1/4 mx-auto">
+      <div className="bg-cupcakes opacity-70 w-screen bg-fixed bg-no-repeat bg-cover bg-center">
+        <div className="img-container lg:pt-2 pb-10 w-3/4 sm:w-2/3 md:w-2/5 mx-auto">
           <img className="fill-white" src="./assets/invert.png" alt="" />
         </div>
       </div>
-      <div className="w-screen ">
-        <p className="px-10 md:px-20 py-5 md:py-10">
+      <div className="w-2/3 mx-auto grid grid-cols-5 py-5 md:py-10">
+        <p className="col-span-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
           voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Facilis, optio. Praesentium amet excepturi officia quis atque sapiente
@@ -31,93 +31,82 @@ const Home = () => {
           laudantium, quisquam porro iste non quam qui odit sequi minima libero?
           Consequatur cupiditate mollitia, cum nesciunt ipsa autem error saepe!
           Reiciendis porro incidunt, illo dicta laborum at error voluptatem.
-          Nihil praesentium fugit nesciunt pariatur facere deserunt laborum
-          quisquam ullam et sunt suscipit magni in provident reiciendis
-          laudantium quasi porro, est voluptatum dolorum. Odio cum libero nam
-          rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-          omnis modi cumque minus necessitatibus, illum enim saepe tenetur
-          assumenda et, eos dolor voluptatum laudantium velit labore vitae
-          officiis exercitationem maiores non. Non deleniti minus dignissimos
-          incidunt, voluptates enim vitae quos explicabo, atque, ad omnis quas
-          doloribus fugiat eum exercitationem numquam optio cum beatae? Modi
-          eaque ex labore tempora sed, nesciunt dolore deserunt, dignissimos
-          unde, voluptatum omnis voluptate sequi iure sunt quia corporis. Ex
-          odio, qui reprehenderit quo provident reiciendis officia assumenda
-          voluptatibus aliquam, pariatur consequatur facere ut? Accusantium
-          iste, porro fuga dicta quisquam repellat perferendis iure illo
-          placeat, provident nobis.
+      
         </p>
-        <div className="img-container grid grid-cols-2 md:grid-cols-5 gap-0">
-          <div className="aspect-square card-zoom">
-            <img
-              src="./assets/img1.jpeg"
-              alt=""
-              className="card-zoom-image object-cover object-center w-full h-full "
-            />
-          </div>
-          <div className="aspect-square card-zoom">
-            <img
-              src="./assets/img2.jpeg"
-              alt=""
-              className="card-zoom-image object-cover object-center w-full h-full"
-            />
-          </div>
-          <div className="aspect-square card-zoom">
-            <img
-              src="./assets/img3.jpeg"
-              alt=""
-              className="card-zoom-image object-cover object-center w-full h-full"
-            />
-          </div>
-          <div className="aspect-square card-zoom">
-            <img
-              src="./assets/img4.jpeg"
-              alt=""
-              className="card-zoom-image object-cover object-center w-full h-full"
-            />
-          </div>
-          <div className="aspect-square card-zoom">
-            <img
-              src="./assets/img5.jpeg"
-              alt=""
-              className="card-zoom-image object-cover object-center w-full h-full"
-            />
-          </div>
-          <div className="aspect-square card-zoom">
-            <img
-              src="./assets/img6.jpeg"
-              alt=""
-              className="card-zoom-image object-cover object-center w-full h-full"
-            />
-          </div>
-          <div className="aspect-square card-zoom">
-            <img
-              src="./assets/img7.jpeg"
-              alt=""
-              className="card-zoom-image object-cover object-center w-full h-full"
-            />
-          </div>
-          <div className="aspect-square card-zoom">
-            <img
-              src="./assets/img8.jpeg"
-              alt=""
-              className="card-zoom-image object-cover object-center w-full h-full"
-            />
-          </div>
-          <div className="aspect-square card-zoom">
-            <img
-              src="./assets/img9.jpeg"
-              alt=""
-              className="card-zoom-image object-cover object-center w-full h-full"
-            />
-          </div>
-          <div className="aspect-square card-zoom">
-            <img
-              src="./assets/img10.jpeg"
-              alt=""
-              className="card-zoom-image object-cover object-center w-full h-full"
-            />
-          </div>
+        <div className="welcome-image col-span-2">
+          <img src="./assets/welcome-img.jpeg" alt="" />
+        </div>
+      </div>
+      <div className="img-container w-screen grid grid-cols-2 md:grid-cols-5 gap-0">
+        <div className="aspect-square card-zoom">
+          <img
+            src="./assets/img1.jpeg"
+            alt=""
+            className="card-zoom-image object-cover object-center w-full h-full "
+          />
+        </div>
+        <div className="aspect-square card-zoom">
+          <img
+            src="./assets/img2.jpeg"
+            alt=""
+            className="card-zoom-image object-cover object-center w-full h-full"
+          />
+        </div>
+        <div className="aspect-square card-zoom">
+          <img
+            src="./assets/img3.jpeg"
+            alt=""
+            className="card-zoom-image object-cover object-center w-full h-full"
+          />
+        </div>
+        <div className="aspect-square card-zoom">
+          <img
+            src="./assets/img4.jpeg"
+            alt=""
+            className="card-zoom-image object-cover object-center w-full h-full"
+          />
+        </div>
+        <div className="aspect-square card-zoom">
+          <img
+            src="./assets/img5.jpeg"
+            alt=""
+            className="card-zoom-image object-cover object-center w-full h-full"
+          />
+        </div>
+        <div className="aspect-square card-zoom">
+          <img
+            src="./assets/img6.jpeg"
+            alt=""
+            className="card-zoom-image object-cover object-center w-full h-full"
+          />
+        </div>
+        <div className="aspect-square card-zoom">
+          <img
+            src="./assets/img7.jpeg"
+            alt=""
+            className="card-zoom-image object-cover object-center w-full h-full"
+          />
+        </div>
+        <div className="aspect-square card-zoom">
+          <img
+            src="./assets/img8.jpeg"
+            alt=""
+            className="card-zoom-image object-cover object-center w-full h-full"
+          />
+        </div>
+        <div className="aspect-square card-zoom">
+          <img
+            src="./assets/img9.jpeg"
+            alt=""
+            className="card-zoom-image object-cover object-center w-full h-full"
+          />
+        </div>
+        <div className="aspect-square card-zoom">
+          <img
+            src="./assets/img10.jpeg"
+            alt=""
+            className="card-zoom-image object-cover object-center w-full h-full"
+          />
         </div>
       </div>
     </>
