@@ -9,15 +9,17 @@ const Home = () => {
         </div>
       </div>
       <div className="w-5/6 my-5 md:my-10 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
-        <h1 className="font-shadows text-4xl text-center justify-center flex py-5 md:py-10">
-          Welcome to <br /> Salt & Spoon!
-        </h1>
-        <p className="font-thasadith text-xl md:col-span-3 px-2 pb-2 xl:px-36 text-center flex items-center justify-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-          voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Facilis, optio. Praesentium amet excepturi officia quis atque sapiente
-          ea animi nulla?
-        </p>
+        <div className="md:col-span-3 py-5 md:pt-10 xl:pt-20">
+          <h1 className="font-shadows text-4xl xl:text-6xl text-center justify-center flex py-5 md:py-10">
+            Welcome to <br class="lg:hidden" /> Salt & Spoon!
+          </h1>
+          <p className="font-thasadith text-xl  px-2 pb-2 xl:px-24 text-center flex ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Facilis, optio. Praesentium amet excepturi officia quis atque
+            sapiente ea animi nulla?
+          </p>
+        </div>
         <div className="welcome-image md:col-span-2 flex">
           <img
             src="./assets/welcome-img.jpeg"
