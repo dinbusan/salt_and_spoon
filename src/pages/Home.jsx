@@ -4,12 +4,12 @@ const Home = () => {
   return (
     <>
       <div className="bg-cupcakes w-screen bg-fixed bg-no-repeat bg-cover bg-center">
-        <div className="img-container lg:pt-2 pb-10 w-3/4 sm:w-2/3 md:w-2/5 mx-auto">
+        <div className="img-container  w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 mx-auto">
           <img className="logo" src="./assets/invert.png" alt="" />
         </div>
       </div>
-      <div className="w-5/6 px-36 my-10 mx-auto grid grid-cols-5 py-5 md:py-10 bg-white">
-        <p className="col-span-3">
+      <div className="w-5/6 my-5 md:my-10 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
+        <p className="md:col-span-3 py-5 px-2 xl:px-36 md:py-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
           voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Facilis, optio. Praesentium amet excepturi officia quis atque sapiente
@@ -19,22 +19,10 @@ const Home = () => {
           voluptate architecto odio eum! Recusandae quos et delectus aut,
           deserunt accusantium adipisci aperiam enim laboriosam aliquam rem
           repellat architecto assumenda itaque explicabo perferendis magnam
-          culpa consectetur iure, animi eius nemo porro molestiae maxime. Vel
-          consequuntur quae, enim beatae minima optio doloribus aliquam fuga ea
-          voluptatem cum pariatur quo rem voluptatum blanditiis tempore! Numquam
-          illo quis nisi omnis? Quae ex cum ipsa magni totam corporis at id
-          earum veritatis! Sunt iste placeat magni nihil! Lorem ipsum dolor, sit
-          amet consectetur adipisicing elit. Labore ex nisi iusto optio, rerum a
-          quasi! Repudiandae ea, et ducimus a totam sit saepe, voluptates enim
-          quisquam incidunt, suscipit perferendis provident quibusdam quo illum
-          deserunt tenetur sunt voluptatum vitae consequatur. Rem commodi iure,
-          laudantium, quisquam porro iste non quam qui odit sequi minima libero?
-          Consequatur cupiditate mollitia, cum nesciunt ipsa autem error saepe!
-          Reiciendis porro incidunt, illo dicta laborum at error voluptatem.
-      
+          culpa consectetur iure, animi eius nemo porro molestiae maxime.
         </p>
-        <div className="welcome-image col-span-2">
-          <img src="./assets/welcome-img.jpeg" alt="" />
+        <div className="welcome-image md:col-span-2 flex">
+          <img src="./assets/welcome-img.jpeg" alt="" className="object-cover" />
         </div>
       </div>
       <div className="img-container w-screen grid grid-cols-2 md:grid-cols-5 gap-0">
