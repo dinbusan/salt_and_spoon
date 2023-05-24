@@ -4,12 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'rubik': ['Rubik Dirt', 'cursive']
+        rubik: ["Rubik Dirt", "cursive"],
       },
       backgroundImage: {
-        'cupcakes' : 'url("./assets/cupcakes_landscape.jpeg")'
+        cupcakes: 'url("./assets/cupcakes_landscape_saturation.jpeg")',
       },
-      
     },
   },
   plugins: [],
