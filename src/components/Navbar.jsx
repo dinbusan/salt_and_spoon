@@ -20,12 +20,7 @@ const Navbar = () => {
   const classNames = (...classes) => classes.filter(Boolean).join(" ");
 
   return (
-    <nav
-      className={classNames(
-        scrollPosition > 0 ? "shadow text-white" : "bg-white text-black",
-        "bg-blue-300 duration-300 flex gap-8 px-4 sticky z-30 top-0"
-      )}
-    >
+    <nav className="bg-sky-950 text-sky-50 duration-300 flex gap-8 px-4 sticky z-30 top-0">
       {currentPath === "/" ? (
         <Link
           className={classNames(
@@ -48,19 +43,19 @@ const Navbar = () => {
       )}
       <ul className="hidden font-thasadith md:flex gap-8 ml-auto py-5 text-2xl">
         <CustomLink
-          className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-blue-700"
+          className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-white"
           to="/"
         >
           Home
         </CustomLink>
         <CustomLink
-          className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-blue-700"
+          className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-white"
           to="/about"
         >
           About
         </CustomLink>
         <CustomLink
-          className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-blue-700"
+          className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-white"
           to="/contact"
         >
           Contact
