@@ -22,7 +22,11 @@ const Home = () => {
           </div>
         </motion.div>
       </div> */}
-      <Section />
+      <Section
+        backGround="bg-bluecake"
+        src={Logo}
+        classNames="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 py-2 xl:py-5 mx-auto"
+      />
       <div className="z-1 relative w-screen bg-blue-50">
         <div className=" w-5/6 my-5 md:my-10 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
           <div className="md:col-span-3 py-5 md:pt-10 xl:pt-20">
@@ -41,7 +45,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Section />
+      <Section
+        backGround="bg-unicorn"
+        
+        classNames="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-1/4 xl:w-1/4 py-2 xl:py-5 mx-auto"
+      >
+        <p className="my-40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, iusto architecto atque reprehenderit asperiores, distinctio impedit similique odio sapiente consequatur repellendus. Dolores, a cumque repellendus distinctio unde hic aperiam excepturi enim, fugit esse praesentium natus facere ab commodi deserunt ipsa.</p>
+      </Section>
       <div className="">
         <div className="bg-sky-50 mt-10 img-container gap-1 px-2 md:px-0 w-screen grid grid-cols-2 md:grid-cols-5 md:gap-0">
           <div className="aspect-square card-zoom">
@@ -120,10 +130,10 @@ const Home = () => {
   );
 };
 
-function Section() {
+function Section({ backGround, src, classNames, children }) {
   let ref = useRef(null);
-  let {scrollYProgress} = useScroll({
-    target: ref, 
+  let { scrollYProgress } = useScroll({
+    target: ref,
     offset: ["start start", "end start"],
   });
   let y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
@@ -131,9 +141,12 @@ function Section() {
   return (
     <div ref={ref}>
       <motion.div className="" style={{ y }}>
-        <div className="bg-bluecake w-screen bg-fixed bg-no-repeat bg-cover bg-center">
-          <div className="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 py-2 xl:py-5 mx-auto">
-            <img className="logo" src={Logo} alt="" />
+        <div
+          className={`${backGround} w-screen bg-fixed bg-no-repeat bg-cover bg-center`}
+        >
+          <div className={`${classNames}`}>
+            {src && <img className="logo" src={src} alt="" />}
+            {children}
           </div>
         </div>
       </motion.div>
