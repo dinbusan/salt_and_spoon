@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Logo from "../assets/invert.png";
 import Welcome from "../assets/welcome-img.jpeg";
 
+
 const Home = () => {
   // let ref = useRef(null);
   // let { scrollYProgress } = useScroll({
@@ -47,10 +48,16 @@ const Home = () => {
       </div>
       <Section
         backGround="bg-unicorn"
-        
-        classNames="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-1/4 xl:w-1/4 py-2 xl:py-5 mx-auto"
+        classNames="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-2 xl:py-5 mx-auto"
       >
-        <p className="my-40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, iusto architecto atque reprehenderit asperiores, distinctio impedit similique odio sapiente consequatur repellendus. Dolores, a cumque repellendus distinctio unde hic aperiam excepturi enim, fugit esse praesentium natus facere ab commodi deserunt ipsa.</p>
+        <p className="my-10 bg-sky-50 bg-opacity-50 p-10">
+          <span>
+            Located in Southington, Connecticut
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam eos tempore dolore, minima expedita, accusantium, eaque eligendi et itaque repellendus nulla esse fugiat quia architecto quisquam reprehenderit? Odit, sit adipisci. Doloremque, quaerat. Tenetur, adipisci. Eum quod voluptates nam ab fugiat facilis accusantium illum perferendis non quae similique, cumque earum asperiores reiciendis aspernatur! Praesentium minima, totam minus fugit sed nihil, hic numquam ullam iure quod maiores cupiditate inventore adipisci eaque ut est incidunt asperiores neque nobis? Exercitationem, aliquid. Possimus, nulla? Voluptate quaerat eaque dolorem, tempora accusamus magnam culpa doloremque ea veritatis, explicabo optio nam earum at dolores dicta iste debitis corrupti!
+          </span>
+          
+        </p>
       </Section>
       <div className="">
         <div className="bg-sky-50 mt-10 img-container gap-1 px-2 md:px-0 w-screen grid grid-cols-2 md:grid-cols-5 md:gap-0">
