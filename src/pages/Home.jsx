@@ -36,14 +36,14 @@ const Home = () => {
             <h1 className="font-shadows tracking-wider text-4xl xl:text-6xl text-center justify-center flex py-5 md:py-10">
               Welcome to <br className="lg:hidden" /> Salt & Spoon!
             </h1>
-            <p className="tracking-wider font-thasadith text-xl  px-2 pb-2 xl:px-24 text-center">
+            <p className="tracking-wider font-thasadith text-xl  px-2 pb-2 xl:px-24 xl:py-10 text-center">
               We are a local Connecticut bakery offering cakes, cupcakes, pies,
               cookies, and other customizable sweets! Contact us here, on
               instagram, or facebook, or call at{" "}
               <em className="inline-block">(860) 384-0553</em>
             </p>
             <Link to="/contact">
-              <button className="block tracking-widest font-thasadith uppercase mx-auto shadow bg-blue-950 hover:bg-blue-800 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">
+              <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto shadow bg-blue-950 hover:bg-blue-800 focus:shadow-outline focus:outline-none text-white py-3 px-10 rounded">
                 Contact Us
               </button>{" "}
             </Link>
