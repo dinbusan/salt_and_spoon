@@ -5,7 +5,6 @@ import Welcome from "../assets/welcome-img.jpeg";
 import Connecticut from "../assets/connecticut.png"
 import { Link } from "react-router-dom";
 
-
 const Home = () => {
   // let ref = useRef(null);
   // let { scrollYProgress } = useScroll({
@@ -15,7 +14,13 @@ const Home = () => {
   // let y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
-    <div className="relative">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1}}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="relative"
+    >
       {/* <div ref={ref}>
         <motion.div className=" relative" style={{ y }}>
           <div className="bg-bluecake w-screen bg-fixed bg-no-repeat bg-cover bg-center">
@@ -138,7 +143,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
