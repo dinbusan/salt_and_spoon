@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Logo from "../assets/invert.png";
 import Welcome from "../assets/welcome-img.jpeg";
+import Connecticut from "../assets/connecticut.png"
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -31,15 +33,20 @@ const Home = () => {
       <div className="z-1 relative w-screen bg-blue-50">
         <div className=" w-5/6 my-5 md:my-10 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
           <div className="md:col-span-3 py-5 md:pt-10 xl:pt-20">
-            <h1 className="font-shadows text-4xl xl:text-6xl text-center justify-center flex py-5 md:py-10">
+            <h1 className="font-shadows tracking-wider text-4xl xl:text-6xl text-center justify-center flex py-5 md:py-10">
               Welcome to <br className="lg:hidden" /> Salt & Spoon!
             </h1>
-            <p className="font-thasadith text-xl  px-2 pb-2 xl:px-24 text-center flex ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-              voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Facilis, optio. Praesentium amet excepturi officia quis
-              atque sapiente ea animi nulla?
+            <p className="tracking-wider font-thasadith text-xl  px-2 pb-2 xl:px-24 text-center">
+              We are a local Connecticut bakery offering cakes, cupcakes, pies,
+              cookies, and other customizable sweets! Contact us here, on
+              instagram, or facebook, or call at{" "}
+              <em className="inline-block">(860) 384-0553</em>
             </p>
+            <Link to="/contact">
+              <button className="block tracking-widest font-thasadith uppercase mx-auto shadow bg-blue-950 hover:bg-blue-800 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">
+                Contact Us
+              </button>{" "}
+            </Link>
           </div>
           <div className="welcome-image md:col-span-2 flex">
             <img src={Welcome} alt="" className="object-cover" />
@@ -48,15 +55,13 @@ const Home = () => {
       </div>
       <Section
         backGround="bg-unicorn"
-        classNames="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-2 xl:py-5 mx-auto"
+        classNames="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-4 xl:py-5 mx-auto"
       >
-        <p className="my-10 bg-sky-50 bg-opacity-50 p-10">
-          <span>
-            Located in Southington, Connecticut
-
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam eos tempore dolore, minima expedita, accusantium, eaque eligendi et itaque repellendus nulla esse fugiat quia architecto quisquam reprehenderit? Odit, sit adipisci. Doloremque, quaerat. Tenetur, adipisci. Eum quod voluptates nam ab fugiat facilis accusantium illum perferendis non quae similique, cumque earum asperiores reiciendis aspernatur! Praesentium minima, totam minus fugit sed nihil, hic numquam ullam iure quod maiores cupiditate inventore adipisci eaque ut est incidunt asperiores neque nobis? Exercitationem, aliquid. Possimus, nulla? Voluptate quaerat eaque dolorem, tempora accusamus magnam culpa doloremque ea veritatis, explicabo optio nam earum at dolores dicta iste debitis corrupti!
+        <p className="my-10 bg-sky-50 bg-opacity-70 p-5 text-center text-xl">
+          <span className="font-thasadith tracking-wider text-center ">
+            Proudly serving the <br /> Southington, Connecticut area!
+            <img className="w-12 mx-auto" src={Connecticut} />
           </span>
-          
         </p>
       </Section>
       <div className="">

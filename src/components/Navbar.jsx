@@ -27,7 +27,7 @@ const Navbar = () => {
             currentPath === "/" && scrollPosition > 0
               ? "block cursor-pointer"
               : "opacity-0 cursor-default",
-            "transition-opacity duration-300 font-rubik text-2xl sm:text-3xl py-5"
+            "transition-opacity duration-300 font-rubik tracking-wider text-2xl sm:text-3xl py-5"
           )}
           to="/"
         >
