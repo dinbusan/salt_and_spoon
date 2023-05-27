@@ -24,9 +24,9 @@ const Navbar = () => {
       {currentPath === "/" ? (
         <Link
           className={classNames(
-            currentPath === "/" && scrollPosition > 0
-              ? "block cursor-pointer"
-              : "opacity-0 cursor-default",
+            // currentPath === "/" && scrollPosition > 0
+            //   ? "block cursor-pointer"
+            //   : "opacity-0 cursor-default",
             "transition-opacity duration-300 font-rubik tracking-wider text-xl sm:text-3xl py-5"
           )}
           to="/"
