@@ -35,13 +35,13 @@ const Navbar = () => {
         </Link>
       ) : (
         <Link
-          className="block transition-opacity duration-300 font-rubik text-3xl py-5"
+          className="block tracking-wider transition-opacity duration-300 font-rubik text-3xl py-5"
           to="/"
         >
           SALT & SPOON
         </Link>
       )}
-      <ul className="hidden font-thasadith md:flex gap-10 mr-20 ml-auto py-5 text-2xl">
+      <ul className="hidden font-thasadith md:flex gap-10 mr-20 ml-auto py-5 text-2xl tracking-wider">
         <CustomLink
           className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-white"
           to="/"

@@ -62,11 +62,9 @@ const Home = () => {
         backGround="bg-unicorn"
         classNames="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-4 xl:py-5 mx-auto"
       >
-        <p className="my-10 bg-sky-50 bg-opacity-70 p-5 text-center text-xl">
-          <span className="font-thasadith tracking-wider text-center ">
+        <p className="my-10 font-thasadith tracking-wider bg-sky-50 bg-opacity-70 p-5 text-center text-xl">
             Proudly serving the <br /> Southington, Connecticut area!
             <img className="w-12 mx-auto" src={Connecticut} />
-          </span>
         </p>
       </Section>
       <div className="">
