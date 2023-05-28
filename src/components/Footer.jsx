@@ -14,14 +14,14 @@ const Footer = () => {
           <br />
           Follow us at:
         </p>
-          <div className="justify-center pt-1 flex text-lg ">
-            <a href="https://www.instagram.com/p/CF0gMAoHiMk/">
-              <FaInstagram className="mx-1 hover:text-blue-400" />
-            </a>
-            <a href="https://www.facebook.com/saltandspoonct">
-              <FaFacebook className="mx-1 hover:text-blue-400" />
-            </a>
-          </div>
+        <div className="justify-center pt-1 flex text-lg ">
+          <a href="https://www.instagram.com/p/CF0gMAoHiMk/">
+            <FaInstagram className="mx-1 hover:text-blue-400 duration-300" />
+          </a>
+          <a href="https://www.facebook.com/saltandspoonct">
+            <FaFacebook className="mx-1 hover:text-blue-400 duration-300" />
+          </a>
+        </div>
       </div>
     </footer>
   );
