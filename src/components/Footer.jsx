@@ -13,6 +13,7 @@ const Footer = () => {
           2023 Salt & Spoon CT
           <br />
           Follow us at:
+        </p>
           <div className="justify-center pt-1 flex text-lg ">
             <a href="https://www.instagram.com/p/CF0gMAoHiMk/">
               <FaInstagram className="mx-1 hover:text-blue-400" />
@@ -21,7 +22,6 @@ const Footer = () => {
               <FaFacebook className="mx-1 hover:text-blue-400" />
             </a>
           </div>
-        </p>
       </div>
     </footer>
   );
