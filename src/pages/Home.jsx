@@ -46,7 +46,12 @@ const Home = () => {
               We are a local Connecticut bakery offering cakes, cupcakes, pies,
               cookies, and other customizable sweets! Contact us here, on
               instagram, or facebook, or call at{" "}
-              <em className="inline-block">(860) 384-0553</em>
+              <Link className="md:hidden" to="tel:8603840553">
+                <em>(860) 384-0553</em>
+              </Link>
+              <span className="hidden md:inline">
+                <em>(860) 384-0553</em>
+              </span>
             </p>
             <Link to="/contact">
               <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto shadow bg-blue-950 hover:bg-blue-800 focus:shadow-outline focus:outline-none text-white py-3 px-10 rounded">

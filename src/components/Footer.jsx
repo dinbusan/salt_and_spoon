@@ -1,5 +1,6 @@
 import React from "react";
 import {FaInstagram, FaFacebook } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,7 +9,9 @@ const Footer = () => {
         <p className="leading-4">
           Salt & Spoon CT
           <br />
-          Salt & Spoon is a local purveyor of delicious sweets and treats.
+          <Link className="md:hidden" to="tel:8603840553">(860) 384-0553</Link>
+          <span className="hidden md:inline">(860) 384-0553</span>
+          , Southington, CT
           <br />
           2023 Salt & Spoon CT
           <br />

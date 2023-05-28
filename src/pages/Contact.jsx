@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import {useForm} from "react-hook-form"
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const {
@@ -38,6 +39,9 @@ const Contact = () => {
       setIsSuccessfullySubmitted(result.success);
     };
 
+    useEffect(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }, []);
 
   return (
     <motion.div
@@ -71,7 +75,10 @@ const Contact = () => {
               can customize any order.
               <br />
               Contact me with this form, on instagram, facebook, or call <br />
-              (860) 384-0553
+              <Link className="md:hidden" to="tel:8603840553">
+                (860) 384-0553
+              </Link>
+              <span className="hidden md:block">(860) 384-0553</span>
             </p>
             <div className="justify-center pt-4 flex text-3xl">
               <a href="https://www.instagram.com/p/CF0gMAoHiMk/">
