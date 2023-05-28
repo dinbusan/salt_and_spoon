@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1}}
+      animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       className="relative"
@@ -64,8 +64,9 @@ const Home = () => {
         classNames="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-4 xl:py-5 mx-auto"
       >
         <p className="my-10 font-thasadith tracking-wider bg-sky-50 bg-opacity-70 p-5 text-center text-xl">
-            Proudly serving the <br /> Southington, Connecticut area!
-            <img className="w-12 mx-auto" src={Connecticut} />
+          Serving the <br /> Southington, Connecticut area
+          <br /> since 2017!
+          <img className="w-12 mx-auto" src={Connecticut} />
         </p>
       </Section>
       <div className="">
