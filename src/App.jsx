@@ -6,9 +6,7 @@ function App() {
   return (
     <div className="bg-sky-50 min-h-screen">
       <Navbar />
-
       <AnimatedRoutes />
-
       <Footer />
     </div>
   );
