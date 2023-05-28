@@ -38,7 +38,7 @@ const Home = () => {
       />
       <div className="z-1 relative w-screen bg-blue-50">
         <div className=" w-5/6 my-5 md:my-10 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
-          <div className="md:col-span-3 py-5 md:pt-10 xl:pt-20">
+          <div className="md:col-span-3 py-5 md:pt-10 xl:pt-10">
             <h1 className="font-shadows tracking-wider text-4xl xl:text-6xl text-center justify-center flex py-5 md:py-10">
               Welcome to <br className="lg:hidden" /> Salt & Spoon!
             </h1>

@@ -67,7 +67,7 @@ const Contact = () => {
           >
             <h2 className="text-center font-medium text-2xl mb-4 roddenberry tracking-wider text-3xl">
               CONTACT US
-            </h2>``
+            </h2>
             <form
               onSubmit={handleSubmit(onSubmit)}
               className="flex flex-1 flex-col justify-evenly tracking-wider"

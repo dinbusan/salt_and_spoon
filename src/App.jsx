@@ -3,16 +3,15 @@ import Footer from "./components/Footer";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
-
   return (
-  <div className="bg-sky-50">
-<Navbar />
+    <div className="bg-sky-50 min-h-screen">
+      <Navbar />
 
-  <AnimatedRoutes/>
+      <AnimatedRoutes />
 
-<Footer />
-  </div>
-  )
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
