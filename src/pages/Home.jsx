@@ -45,7 +45,7 @@ const Home = () => {
             <p className="tracking-wider font-thasadith text-xl  px-2 pb-2 xl:px-24 xl:py-10 text-center">
               We are a local Connecticut bakery offering cakes, cupcakes, pies,
               cookies, and other customizable sweets! Contact us here, on
-              instagram, or facebook, or call at{" "}
+              instagram, or facebook, or call at <br />
               <Link className="md:hidden" to="tel:8603840553">
                 <em>(860) 384-0553</em>
               </Link>
@@ -71,7 +71,12 @@ const Home = () => {
         <p className="my-10 font-thasadith tracking-wider bg-sky-50 bg-opacity-70 p-5 text-center text-xl">
           Serving the <br /> Southington, Connecticut area
           <br /> since 2017!
-          <img className="w-12 mx-auto" src={Connecticut} />
+          <img className="w-12 my-10 mx-auto" src={Connecticut} />
+          Currently available to book cakes, pies, pastries, or other
+          customizable sweets!
+          <br />
+          <br />
+          Please contact us to place your order.
         </p>
       </Section>
       <div className="">

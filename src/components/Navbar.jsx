@@ -19,6 +19,13 @@ const Navbar = () => {
 
   const classNames = (...classes) => classes.filter(Boolean).join(" ");
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
   return (
     <nav className="bg-sky-950 text-sky-50 duration-300 flex gap-8 px-4 sticky z-30 top-0">
       {currentPath === "/" ? (
@@ -29,6 +36,7 @@ const Navbar = () => {
             //   : "opacity-0 cursor-default",
             "transition-opacity duration-300 font-rubik tracking-wider text-xl sm:text-3xl py-5"
           )}
+          onClick={scrollToTop}
           to="/"
         >
           SALT & SPOON
