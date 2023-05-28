@@ -60,14 +60,14 @@ const Contact = () => {
           </p>
         </motion.div>
       ) : (
-        <div className="w-2/3 font-thasadith justify-center items-center p-2">
+        <div className="w-2/3 flex font-thasadith justify-center items-center p-2">
           <div
-            className="w-5/6 shadow-lg rounded-md bg-white p-2 md:p-8 flex flex-col"
-            style={{ height: "450px" }}
+            className="w-5/6 shadow-lg mt-5 rounded-md bg-white p-2 md:p-8 flex flex-col"
+            style={{ height: "600px" }}
           >
             <h2 className="text-center font-medium text-2xl mb-4 roddenberry tracking-wider text-3xl">
               CONTACT US
-            </h2>
+            </h2>``
             <form
               onSubmit={handleSubmit(onSubmit)}
               className="flex flex-1 flex-col justify-evenly tracking-wider"
@@ -103,6 +103,24 @@ const Contact = () => {
               {errors.from_email && (
                 <span className="text-sm text-red-700">
                   {errors.from_email.message}
+                </span>
+              )}
+              <label className="xl:mt-5" htmlFor="from_email">
+                Phone number
+              </label>
+              <input
+                className="border-2 outline-none p-2 rounded-md"
+                placeholder="999-999-9999"
+                type="tel"
+                name="from_phone"
+                disabled={isSubmitting}
+                {...register("from_phone", {
+                  required: "Please enter your phone number",
+                })}
+              />
+              {errors.from_phone && (
+                <span className="text-sm text-red-700">
+                  {errors.from_phone.message}
                 </span>
               )}
               <label className="xl:mt-5" htmlFor="message">
