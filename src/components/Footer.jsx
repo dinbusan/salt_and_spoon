@@ -3,7 +3,7 @@ import {FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bottom-0 w-screen text-center bg-blue-950 text-sky-50 mt-10 p-5 tracking-wider font-thasadith">
+    <footer className="w-screen text-center bg-blue-950 text-sky-50 mt-10 p-5 tracking-wider font-thasadith">
       <div>
         <p className="">Salt & Spoon CT</p>
         <p>Salt & Spoon is a local purveyor of delicious sweets and treats.</p>

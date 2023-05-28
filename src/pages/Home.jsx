@@ -4,6 +4,7 @@ import Logo from "../assets/invert.png";
 import Welcome from "../assets/welcome-img.jpeg";
 import Connecticut from "../assets/connecticut.png"
 import { Link } from "react-router-dom";
+import Rose from "../assets/rose_cake.png"
 
 const Home = () => {
   // let ref = useRef(null);
@@ -54,7 +55,7 @@ const Home = () => {
             </Link>
           </div>
           <div className="welcome-image md:col-span-2 flex">
-            <img src={Welcome} alt="" className="object-cover" />
+            <img src={Rose} alt="" className="object-cover" />
           </div>
         </div>
       </div>
