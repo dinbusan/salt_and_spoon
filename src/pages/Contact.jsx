@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import {useForm} from "react-hook-form"
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   const {
@@ -60,91 +61,113 @@ const Contact = () => {
           </p>
         </motion.div>
       ) : (
-        <div className="w-2/3 flex font-thasadith justify-center items-center p-2">
-          <div
-            className="w-5/6 shadow-lg mt-5 rounded-md bg-white p-2 md:p-8 flex flex-col"
-            style={{ height: "600px" }}
-          >
-            <h2 className="text-center font-medium text-2xl mb-4 roddenberry tracking-wider text-3xl">
-              CONTACT US
-            </h2>
-            <form
-              onSubmit={handleSubmit(onSubmit)}
-              className="flex flex-1 flex-col justify-evenly tracking-wider"
-              ref={reset}
-            >
-              <label htmlFor="from_name">Name</label>
-              <input
-                className="border-2 outline-none p-2 rounded-md"
-                placeholder="Name"
-                type="text"
-                name="from_name"
-                disabled={isSubmitting}
-                {...register("from_name", { required: "Name is required" })}
-              />
-              {errors.from_name && (
-                <span className="text-sm text-red-700">
-                  {errors.from_name.message}
-                </span>
-              )}
-              <label className="xl:mt-5" htmlFor="from_email">
-                Email
-              </label>
-              <input
-                className="border-2 outline-none p-2 rounded-md"
-                placeholder="abc123@gmail.com"
-                type="email"
-                name="from_email"
-                disabled={isSubmitting}
-                {...register("from_email", {
-                  required: "Please enter your email",
-                })}
-              />
-              {errors.from_email && (
-                <span className="text-sm text-red-700">
-                  {errors.from_email.message}
-                </span>
-              )}
-              <label className="xl:mt-5" htmlFor="from_email">
-                Phone number
-              </label>
-              <input
-                className="border-2 outline-none p-2 rounded-md"
-                placeholder="999-999-9999"
-                type="tel"
-                name="from_phone"
-                disabled={isSubmitting}
-                {...register("from_phone", {
-                  required: "Please enter your phone number",
-                })}
-              />
-              {errors.from_phone && (
-                <span className="text-sm text-red-700">
-                  {errors.from_phone.message}
-                </span>
-              )}
-              <label className="xl:mt-5" htmlFor="message">
-                Description:
-              </label>
-              <textarea
-                className="border-2 outline-none p-2 rounded-md"
-                name="message"
-                placeholder="Describe your custom order..."
-                disabled={isSubmitting}
-                {...register("message", { required: "Please enter a message" })}
-              />
-              {errors.message && (
-                <span className="text-sm text-red-700">
-                  {errors.message.message}
-                </span>
-              )}
-              <button
-                type="submit"
-                className="mt-4 flex justify-center p-2 rounded-md w-1/2 self-center bg-blue-950 font-thasadith text-lg text-blue-50 hover:bg-blue-800"
+        <div className="md:grid grid-cols-12 w-5/6 shadow-lg mt-5 rounded-md bg-white p-2 md:p-8">
+          <div className="col-span-5">
+            <p className="mt-5 lg:mt-20 text-center font-shadows text-4xl tracking-wider p-2 ">
+              Let me help you make your event special!
+            </p>
+            <p className="text-center tracking-wider font-thasadith text-xl mt-5">
+              Whether you need a cake, cupcakes, pie, or other bakery treats we
+              can customize any order.
+              <br />
+              Contact me with this form, on instagram, facebook, or call <br />
+              (860) 384-0553
+            </p>
+            <div className="justify-center pt-4 flex text-3xl">
+              <a href="https://www.instagram.com/p/CF0gMAoHiMk/">
+                <FaInstagram className="mx-3 hover:text-blue-400 duration-300" />
+              </a>
+              <a href="https://www.facebook.com/saltandspoonct">
+                <FaFacebook className="mx-3 hover:text-blue-400 duration-300" />
+              </a>
+            </div>
+          </div>
+          <hr className="my-5 w-3/4 mx-auto md:hidden" />
+          <div className="col-span-7 flex font-thasadith justify-center items-center p-2">
+            <div className="w-5/6 flex flex-col" style={{ height: "600px" }}>
+              <h2 className="text-center font-medium text-2xl mb-4 roddenberry tracking-wider text-3xl">
+                CONTACT ME
+              </h2>
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="flex flex-1 flex-col justify-evenly tracking-wider"
+                ref={reset}
               >
-                Send
-              </button>
-            </form>
+                <label htmlFor="from_name">Name</label>
+                <input
+                  className="border-2 outline-none p-2 rounded-md"
+                  placeholder="Name"
+                  type="text"
+                  name="from_name"
+                  disabled={isSubmitting}
+                  {...register("from_name", { required: "Name is required" })}
+                />
+                {errors.from_name && (
+                  <span className="text-sm text-red-700">
+                    {errors.from_name.message}
+                  </span>
+                )}
+                <label className="xl:mt-5" htmlFor="from_email">
+                  Email
+                </label>
+                <input
+                  className="border-2 outline-none p-2 rounded-md"
+                  placeholder="abc123@gmail.com"
+                  type="email"
+                  name="from_email"
+                  disabled={isSubmitting}
+                  {...register("from_email", {
+                    required: "Please enter your email",
+                  })}
+                />
+                {errors.from_email && (
+                  <span className="text-sm text-red-700">
+                    {errors.from_email.message}
+                  </span>
+                )}
+                <label className="xl:mt-5" htmlFor="from_email">
+                  Phone number
+                </label>
+                <input
+                  className="border-2 outline-none p-2 rounded-md"
+                  placeholder="999-999-9999"
+                  type="tel"
+                  name="from_phone"
+                  disabled={isSubmitting}
+                  {...register("from_phone", {
+                    required: "Please enter your phone number",
+                  })}
+                />
+                {errors.from_phone && (
+                  <span className="text-sm text-red-700">
+                    {errors.from_phone.message}
+                  </span>
+                )}
+                <label className="xl:mt-5" htmlFor="message">
+                  Description:
+                </label>
+                <textarea
+                  className="border-2 outline-none p-2 rounded-md"
+                  name="message"
+                  placeholder="Describe your custom order..."
+                  disabled={isSubmitting}
+                  {...register("message", {
+                    required: "Please enter a message",
+                  })}
+                />
+                {errors.message && (
+                  <span className="text-sm text-red-700">
+                    {errors.message.message}
+                  </span>
+                )}
+                <button
+                  type="submit"
+                  className="mt-4 flex justify-center p-2 rounded-md w-1/2 self-center bg-blue-950 font-thasadith text-lg text-blue-50 hover:bg-blue-800"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       )}
