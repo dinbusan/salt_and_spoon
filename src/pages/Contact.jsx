@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import {useForm} from "react-hook-form"
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { FaCookieBite } from "react-icons/fa"
 const Contact = () => {
   const {
     register, 
@@ -69,7 +69,10 @@ const Contact = () => {
           <div className="col-span-5">
             <p className="mt-5 lg:mt-20 text-center font-shadows text-4xl tracking-wider p-2 ">
               Let me help you make your event special!
+              {/* <hr class="hidden md:block w-10 h-0.5 mx-auto mt-10 rounded mb-7 bg-gray-950 border-0" /> */}
+              <FaCookieBite className="mx-auto mt-10 mb-7" />
             </p>
+            
             <p className="text-center tracking-wider font-thasadith text-xl mt-5">
               Whether you need a cake, cupcakes, pie, or other bakery treats we
               can customize any order.

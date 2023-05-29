@@ -22,8 +22,12 @@ const About = () => {
         />
         <div className="mx-5 mt-10 md:mt-20 xl:col-start-2 font-thasadith">
           <p className="flex flex-col tracking-wider text-center">
-            <span className="text-center  tracking-widest font-bold">MEET GAIL</span>
-            <hr class="w-10 h-0.5 mx-auto mt-4 mb-7 bg-gray-900 border-0" />
+            <span className="text-center  tracking-widest font-bold">
+              MEET GAIL
+            </span>
+          </p>
+          <hr className="w-10 h-0.5 mx-auto mt-4 mb-7 bg-gray-900 border-0" />
+          <p className="flex flex-col tracking-wider text-center">
             Salt and Spoon is run as a one woman show, by Gail Gianelli.
           </p>
         </div>
