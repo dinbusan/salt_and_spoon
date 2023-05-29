@@ -169,7 +169,7 @@ function Section({ backGround, src, classNames, children }) {
     <div ref={ref}>
       <motion.div className="" style={{ y }}>
         <div
-          className={`${backGround} w-screen bg-fixed bg-no-repeat bg-cover bg-center`}
+          className={`${backGround} bg-fixed bg-no-repeat bg-cover bg-center`}
         >
           <div className={`${classNames}`}>
             {src && <img className="logo" src={src} alt="" />}
