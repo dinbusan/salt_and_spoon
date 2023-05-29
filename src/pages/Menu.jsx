@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Cake from "../assets/tropical_cake.png";
-import Cupcakes from "../assets/cupcake_flowers.png";
-import Pie from "../assets/apple_pie.png";
-import Cheesecake from "../assets/berry_cheesecake.png";
-import Donuts from "../assets/donuts.png";
+import Cake from "/assets/tropical_cake.png";
+import Cupcakes from "/assets/cupcake_flowers.png";
+import Pie from "/assets/apple_pie.png";
+import Cheesecake from "/assets/berry_cheesecake.png";
+import Donuts from "/assets/donuts.png";
 
 const Menu = () => {
   return (
@@ -18,7 +18,7 @@ const Menu = () => {
       <div className="bg-sky-950 pb-5 text-blue-50 font-thasadith tracking-wider text-3xl text-center">
         OUR MENU
       </div>
-      <p className="bg-sky-50 font-thasadith text-center mx-5 my-4">
+      <p className="bg-sky-50 font-thasadith text-center mx-auto text-xl tracking-wider my-10 w-1/3">
         We are proud to offer a fully customizable menu. If you have an idea we
         can work together to make it happen! Below are some of my most popular
         menu items.
@@ -73,7 +73,7 @@ function ImgSection({ src, classNames }) {
   let ref = useRef(null);
   let { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"],
+    offset: ["end end", "end start"],
   });
   let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   return (

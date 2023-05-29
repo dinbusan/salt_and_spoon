@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Logo from "../assets/invert.png";
-import Welcome from "../assets/welcome-img.jpeg";
-import Connecticut from "../assets/connecticut.png"
+import Logo from "/assets/invert.png";
+import Welcome from "/assets/welcome-img.jpeg";
+import Connecticut from "/assets/connecticut.png"
 import { Link } from "react-router-dom";
-import Rose from "../assets/rose_cake.png"
+import Rose from "/assets/rose_cake.png"
 
 const Home = () => {
   // let ref = useRef(null);
