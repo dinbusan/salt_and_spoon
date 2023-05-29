@@ -9,7 +9,9 @@ const Footer = () => {
         <p className="leading-4">
           Salt & Spoon CT
           <br />
-          <Link className="md:hidden" to="tel:8603840553">(860) 384-0553</Link>
+          <Link className="md:hidden" to="tel:8603840553">
+            (860) 384-0553
+          </Link>
           <span className="hidden md:inline">(860) 384-0553</span>
           , Southington, CT
           <br />
@@ -18,7 +20,7 @@ const Footer = () => {
           Follow us at:
         </p>
         <div className="justify-center pt-1 flex text-lg ">
-          <a href="https://www.instagram.com/p/CF0gMAoHiMk/">
+          <a href="https://www.instagram.com/saltandspoonct/">
             <FaInstagram className="mx-1 hover:text-blue-400 duration-300" />
           </a>
           <a href="https://www.facebook.com/saltandspoonct">

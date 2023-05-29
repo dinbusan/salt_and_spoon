@@ -72,7 +72,7 @@ const Contact = () => {
               {/* <hr class="hidden md:block w-10 h-0.5 mx-auto mt-10 rounded mb-7 bg-gray-950 border-0" /> */}
               <FaCookieBite className="mx-auto mt-10 mb-7" />
             </p>
-            
+
             <p className="text-center tracking-wider font-thasadith text-xl mt-5">
               Whether you need a cake, cupcakes, pie, or other bakery treats we
               can customize any order.
@@ -84,7 +84,7 @@ const Contact = () => {
               <span className="hidden md:block">(860) 384-0553</span>
             </p>
             <div className="justify-center pt-4 flex text-3xl">
-              <a href="https://www.instagram.com/p/CF0gMAoHiMk/">
+              <a href="https://www.instagram.com/saltandspoonct/">
                 <FaInstagram className="mx-3 hover:text-blue-400 duration-300" />
               </a>
               <a href="https://www.facebook.com/saltandspoonct">
