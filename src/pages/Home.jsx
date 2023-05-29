@@ -72,8 +72,8 @@ const Home = () => {
           Serving the <br /> Southington, Connecticut area
           <br /> since 2017!
           <img className="w-12 my-10 mx-auto" src={Connecticut} />
-          Currently available to book cakes, pies, pastries, or other
-          customizable sweets!
+          Currently available to book cakes, pies, pastries, and other
+          treats!
           <br />
           <br />
           Please contact us to place your order.
