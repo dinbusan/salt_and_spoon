@@ -16,7 +16,7 @@ const Menu = () => {
       transition={{ duration: 0.5 }}
       className="relative"
     >
-      <div className="bg-sky-950 pb-5 text-blue-50 font-thasadith tracking-wider text-3xl text-center">
+      <div className="bg-sky-950 pb-5 text-blue-50 font-thasadith tracking-wider text-3xl md:text-4xl xl:text-5xl text-center">
         OUR MENU
         <hr className="w-10 h-0.5 mx-auto mt-4 mb-5 bg-sky-50 border-0" />
         <p className="text-sky-50 font-thasadith text-center mx-auto text-xl tracking-wider my-10 w-5/6 md:w-1/2">
