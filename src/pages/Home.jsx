@@ -80,7 +80,7 @@ const Home = () => {
         </p>
       </Section>
       <div className="">
-        <div className="bg-sky-50 mt-10 img-container gap-1 px-2 md:px-0 w-screen grid grid-cols-2 md:grid-cols-5 md:gap-0">
+        <div className="bg-sky-50 mt-10 img-container px-2 md:px-0 w-screen grid grid-cols-2 md:grid-cols-5 gap-0">
           <div className="aspect-square card-zoom">
             <img
               src="/assets/img1.jpeg"
