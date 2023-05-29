@@ -5,6 +5,7 @@ import Cupcakes from "/assets/cupcake_flowers.png";
 import Pie from "/assets/apple_pie.png";
 import Cheesecake from "/assets/berry_cheesecake.png";
 import Donuts from "/assets/donuts.png";
+import {useMediaQuery} from "react-responsive"
 
 const Menu = () => {
   return (
@@ -18,7 +19,7 @@ const Menu = () => {
       <div className="bg-sky-950 pb-5 text-blue-50 font-thasadith tracking-wider text-3xl text-center">
         OUR MENU
         <hr className="w-10 h-0.5 mx-auto mt-4 mb-5 bg-sky-50 border-0" />
-        <p className="text-sky-50 font-thasadith text-center mx-auto text-xl tracking-wider my-10 w-5/6 md:w-1/3">
+        <p className="text-sky-50 font-thasadith text-center mx-auto text-xl tracking-wider my-10 w-5/6 md:w-1/2">
           We are proud to offer a fully customizable menu. If you have an idea
           we can work together to make it happen! Below are some of my most
           popular menu items.
@@ -71,22 +72,54 @@ const Menu = () => {
 };
 
 function ImgSection({ src, classNames }) {
+  const isScreenMdOrLarger = useMediaQuery({ minWidth: 768 });
+  const hasScroll = isScreenMdOrLarger;
+
   let ref = useRef(null);
   let { scrollYProgress } = useScroll({
     target: ref,
     offset: ["end end", "end start"],
   });
   let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  return (
-    <motion.img
-      ref={ref}
-    className={classNames}
-      style={{ y }}
-      src={src}
-      alt=""
-    />
-  );
+
+  let imgElement;
+  if (hasScroll) {
+    imgElement = (
+      <motion.img
+        ref={ref}
+        className={classNames}
+        style={{ y }}
+        src={src}
+        alt=""
+      />
+    );
+  } else {
+    imgElement = (
+      <motion.img ref={ref} className={classNames} src={src} alt="" />
+    );
+  }
+
+  return imgElement;
 }
+
+
+// function ImgSection({ src, classNames }) {
+//   let ref = useRef(null);
+//   let { scrollYProgress } = useScroll({
+//     target: ref,
+//     offset: ["end end", "end start"],
+//   });
+//   let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+//   return (
+//     <motion.img
+//       ref={ref}
+//     className={classNames}
+//       style={{ y }}
+//       src={src}
+//       alt=""
+//     />
+//   );
+// }
 
 // function TextSection({ children, classNames }) {
 //   let ref = useRef(null);
