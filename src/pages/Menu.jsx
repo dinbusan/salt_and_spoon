@@ -27,7 +27,7 @@ const Menu = () => {
       </div>
       <div className="md:grid md:grid-cols-2 xl:mx-10">
         <div className="md:order-1 md:my-auto font-thasadith tracking-wider text-xl text-center p-5">
-          <p className="">DECORATED CAKES</p>
+          <p className="font-bold">DECORATED CAKES</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
           <p>
             Cakes can be decorated and customized to your liking. Tiered wedding
@@ -38,7 +38,7 @@ const Menu = () => {
         <ImgSection src={Cake} classNames={" md:order-2 aspect-square"} />
         {/* <img className="-z-1 md:order-2 aspect-square " src={Cake} alt="" /> */}
         <div className="md:order-4 z-20 justify-center flex flex-col  bg-sky-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
-          <p className="">CUPCAKES</p>
+          <p className="font-bold">CUPCAKES</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
           <p className="">
             Cupcake flower baskets, centerpieces, and boards available as well!
@@ -46,7 +46,7 @@ const Menu = () => {
         </div>
         <ImgSection classNames={"md:order-3"} src={Cupcakes} alt="" />
         <div className="md:order-5 z-20 justify-center flex flex-col  bg-sky-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
-          <p className="">PIES</p>
+          <p className="font-bold">PIES</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
           <p>
             Most popular flavors include Salted Apple Caramel (pictured),
@@ -55,13 +55,13 @@ const Menu = () => {
         </div>
         <ImgSection classNames={"md:order-6 "} src={Pie} alt="" />
         <div className="md:order-8 z-20 justify-center flex flex-col  bg-sky-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
-          <p className="">CHEESECAKE</p>
+          <p className="font-bold">CHEESECAKE</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
           <p>New York style cheesecake</p>
         </div>
         <ImgSection classNames={"md:order-7"} src={Cheesecake} alt="" />
         <div className="md:order-9 z-20 justify-center flex flex-col bg-sky-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
-          <p className="">DONUTS</p>
+          <p className="font-bold">DONUTS</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
           <p>Italian style cream filled donuts</p>
         </div>
