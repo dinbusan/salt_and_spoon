@@ -9,8 +9,8 @@ export default {
         thasadith: ["Thasadith", "sans-serif"],
       },
       backgroundImage: {
-        bluecake: 'url("./assets/img8_low_contrast.jpeg")',
-        unicorn: 'url("./assets/img6_low_contrast.png")',
+        bluecake: 'url("/assets/img8_low_contrast.jpeg")',
+        unicorn: 'url("/assets/img6_low_contrast.png")',
       },
     },
   },

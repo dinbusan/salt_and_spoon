@@ -83,70 +83,70 @@ const Home = () => {
         <div className="bg-sky-50 mt-10 img-container gap-1 px-2 md:px-0 w-screen grid grid-cols-2 md:grid-cols-5 md:gap-0">
           <div className="aspect-square card-zoom">
             <img
-              src="src/assets/img1.jpeg"
+              src="/assets/img1.jpeg"
               alt=""
               className="card-zoom-image object-cover object-center w-full h-full "
             />
           </div>
           <div className="aspect-square card-zoom">
             <img
-              src="src/assets/img2.jpeg"
+              src="/assets/img2.jpeg"
               alt=""
               className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
           <div className="aspect-square card-zoom">
             <img
-              src="src/assets/img3.jpeg"
+              src="/assets/img3.jpeg"
               alt=""
               className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
           <div className="aspect-square card-zoom">
             <img
-              src="src/assets/img4.jpeg"
+              src="/assets/img4.jpeg"
               alt=""
               className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
           <div className="aspect-square card-zoom">
             <img
-              src="src/assets/img5.jpeg"
+              src="/assets/img5.jpeg"
               alt=""
               className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
           <div className="aspect-square card-zoom">
             <img
-              src="src/assets/img6.jpeg"
+              src="/assets/img6.jpeg"
               alt=""
               className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
           <div className="aspect-square card-zoom">
             <img
-              src="src/assets/img7.jpeg"
+              src="/assets/img7.jpeg"
               alt=""
               className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
           <div className="aspect-square card-zoom">
             <img
-              src="src/assets/img8.jpeg"
+              src="/assets/img8.jpeg"
               alt=""
               className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
           <div className="aspect-square card-zoom">
             <img
-              src="src/assets/img9.jpeg"
+              src="/assets/img9.jpeg"
               alt=""
               className="card-zoom-image object-cover object-center w-full h-full"
             />
           </div>
           <div className="aspect-square card-zoom">
             <img
-              src="src/assets/img10.jpeg"
+              src="/assets/img10.jpeg"
               alt=""
               className="card-zoom-image object-cover object-center w-full h-full"
             />
