@@ -17,12 +17,13 @@ const Menu = () => {
     >
       <div className="bg-sky-950 pb-5 text-blue-50 font-thasadith tracking-wider text-3xl text-center">
         OUR MENU
+        <hr className="w-10 h-0.5 mx-auto mt-4 mb-5 bg-sky-50 border-0" />
+        <p className="text-sky-50 font-thasadith text-center mx-auto text-xl tracking-wider my-10 w-5/6 md:w-1/3">
+          We are proud to offer a fully customizable menu. If you have an idea
+          we can work together to make it happen! Below are some of my most
+          popular menu items.
+        </p>
       </div>
-      <p className="bg-sky-50 font-thasadith text-center mx-auto text-xl tracking-wider my-10 w-1/3">
-        We are proud to offer a fully customizable menu. If you have an idea we
-        can work together to make it happen! Below are some of my most popular
-        menu items.
-      </p>
       <div className="md:grid md:grid-cols-2 xl:mx-10">
         <div className="md:order-1 md:my-auto font-thasadith tracking-wider text-xl text-center p-5">
           <p className="">DECORATED CAKES</p>
