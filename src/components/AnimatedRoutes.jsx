@@ -4,6 +4,7 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Home from '../pages/Home';
 import {AnimatePresence} from "framer-motion";
+import Menu from '../pages/Menu';
 
 const AnimatedRoutes = () => {
   return (
@@ -11,6 +12,7 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>

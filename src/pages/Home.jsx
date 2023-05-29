@@ -37,7 +37,7 @@ const Home = () => {
         classNames="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 py-2 xl:py-5 mx-auto"
       />
       <div className="z-1 relative w-screen bg-blue-50 py-5">
-        <div className=" w-5/6 my-5 md:my-10 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
+        <div className=" w-5/6 my-5 md:my-6 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
           <div className="md:col-span-3 py-5 md:pt-10 xl:pt-10">
             <h1 className="font-shadows tracking-wider text-4xl xl:text-6xl text-center justify-center flex py-5 md:py-10">
               Welcome to <br className="lg:hidden" /> Salt & Spoon!

@@ -64,6 +64,12 @@ function scrollToTop() {
         </CustomLink>
         <CustomLink
           className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-white"
+          to="/menu"
+        >
+          Menu
+        </CustomLink>
+        <CustomLink
+          className="relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[1px] after:bg-white"
           to="/contact"
         >
           Contact
@@ -94,6 +100,12 @@ function scrollToTop() {
           {" "}
           <NavLink onClick={handleClick} to="/about">
             About
+          </NavLink>
+        </li>
+        <li className="py-6 text-4xl">
+          {" "}
+          <NavLink onClick={handleClick} to="/menu">
+            Menu
           </NavLink>
         </li>
         <li className="py-6 text-4xl">
