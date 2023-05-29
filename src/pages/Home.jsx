@@ -34,7 +34,7 @@ const Home = () => {
       <Section
         backGround="bg-bluecake"
         src={Logo}
-        classNames="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 py-2 xl:py-5 mx-auto"
+        classNames="w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 py-2 xl:py-5 mx-auto"
       />
       <div className="z-1 relative w-screen bg-blue-50 py-5">
         <div className=" w-5/6 my-5 md:my-6 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
@@ -169,7 +169,7 @@ function Section({ backGround, src, classNames, children }) {
     <div ref={ref}>
       <motion.div className="" style={{ y }}>
         <div
-          className={`${backGround} bg-fixed bg-no-repeat bg-cover bg-center`}
+          className={`${backGround} bg-no-repeat bg-cover bg-center`}
         >
           <div className={`${classNames}`}>
             {src && <img className="logo" src={src} alt="" />}
