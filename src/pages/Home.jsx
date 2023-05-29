@@ -54,7 +54,7 @@ const Home = () => {
               </span>
             </p>
             <Link to="/contact">
-              <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto shadow bg-blue-950 hover:bg-blue-800 focus:shadow-outline focus:outline-none text-white py-3 px-10 rounded">
+              <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto shadow bg-blue-950 hover:bg-blue-800 duration-300 focus:shadow-outline focus:outline-none text-white py-3 px-10 rounded">
                 Contact Us
               </button>{" "}
             </Link>
