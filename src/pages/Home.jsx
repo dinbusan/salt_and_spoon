@@ -36,7 +36,7 @@ const Home = () => {
         src={Logo}
         classNames="w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 py-2 xl:py-5 mx-auto"
       />
-      <div className="z-1 relative w-screen bg-blue-50 py-5">
+      <div className="z-1 relative w-screen bg-sky-50 pt-5">
         <div className=" w-5/6 my-5 md:my-6 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
           <div className="md:col-span-3 py-5 md:pt-10 xl:pt-10">
             <h1 className="font-shadows tracking-wider text-4xl xl:text-6xl text-center justify-center flex py-5 md:py-10">
@@ -64,7 +64,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Section
+      {/* <Section
         backGround="bg-unicorn"
         classNames=" w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-4 xl:py-5 mx-auto"
       >
@@ -77,10 +77,10 @@ const Home = () => {
           <br />
           Please contact us to place your order.
         </p>
-      </Section>
+      </Section> */}
       <div className="">
         <div className="bg-sky-50 mt-10 w-screen grid grid-cols-2 md:grid-cols-5">
-          <div className="z-20 text-center py-10 col-span-2 md:col-span-5 bg-sky-50 w-full font-shadows text-3xl">
+          <div className="z-20 text-center pb-10 col-span-2 md:col-span-5 bg-sky-50 w-full font-shadows text-3xl">
             <div className="mx-auto h-24 md:h-24 active:scale-75 md:hover:scale-75">
               <a href="https://www.instagram.com/saltandspoonct/">
                 <img
