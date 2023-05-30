@@ -69,7 +69,7 @@ const Home = () => {
         backGround="bg-unicorn"
         classNames=" w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-4 xl:pt-5 mx-auto"
       >
-        <p className="my-10 font-thasadith tracking-wider bg-sky-50 bg-opacity-70 p-5 text-center text-xl">
+        <p className="my-10 font-thasadith tracking-wider text-blue-950  bg-sky-50 bg-opacity-80 p-5 text-center text-xl">
           Serving the <br /> Southington, Connecticut area
           <br /> since 2017!
           <img className="w-12 my-10 mx-auto" src={Connecticut} />
