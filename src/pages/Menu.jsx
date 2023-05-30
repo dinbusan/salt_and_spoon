@@ -25,7 +25,7 @@ const Menu = () => {
           popular menu items.
         </p>
       </div>
-      <div className="md:grid md:grid-cols-2 xl:mx-10">
+      <div className="md:grid md:grid-cols-2 xl:w-2/3 mx-auto">
         <div className="md:order-1 md:my-auto font-thasadith tracking-wider text-xl text-center p-5">
           <p className="font-bold">DECORATED CAKES</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
@@ -78,9 +78,9 @@ function ImgSection({ src, classNames }) {
   let ref = useRef(null);
   let { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["end end", "end start"],
+    offset: ["start start", "end start"],
   });
-  let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
 
   let imgElement;
   if (hasScroll) {
