@@ -80,8 +80,8 @@ const Home = () => {
       </Section>
       <div className="">
         <div className="bg-sky-50 mt-10 w-screen grid grid-cols-2 md:grid-cols-5">
-          <div className="z-20 text-center py-5 col-span-2 md:col-span-5 bg-sky-50 w-full font-shadows text-3xl">
-            <div className="mx-auto h-24 md:h-36 active:scale-75 md:hover:scale-75">
+          <div className="z-20 text-center py-10 col-span-2 md:col-span-5 bg-sky-50 w-full font-shadows text-3xl">
+            <div className="mx-auto h-24 md:h-24 active:scale-75 md:hover:scale-75">
               <a href="https://www.instagram.com/saltandspoonct/">
                 <img
                   className="w-full h-full object-contain"
