@@ -35,7 +35,7 @@ const Menu = () => {
             popular flavors are option1, option2, and option3.
           </p>
         </div>
-        <ImgSection src={Cake} classNames={" md:order-2 aspect-square"} />
+        <img src={Cake} className={" md:order-2 aspect-square"} />
         {/* <img className="-z-1 md:order-2 aspect-square " src={Cake} alt="" /> */}
         <div className="md:order-4 z-20 justify-center flex flex-col  bg-sky-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
           <p className="font-bold">CUPCAKES</p>
@@ -44,7 +44,7 @@ const Menu = () => {
             Cupcake flower baskets, centerpieces, and boards available as well!
           </p>
         </div>
-        <ImgSection classNames={"md:order-3"} src={Cupcakes} alt="" />
+        <img className={"md:order-3"} src={Cupcakes} alt="" />
         <div className="md:order-5 z-20 justify-center flex flex-col  bg-sky-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
           <p className="font-bold">PIES</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
@@ -53,54 +53,54 @@ const Menu = () => {
             Option2, Option3
           </p>
         </div>
-        <ImgSection classNames={"md:order-6 "} src={Pie} alt="" />
+        <img className={"md:order-6 "} src={Pie} alt="" />
         <div className="md:order-8 z-20 justify-center flex flex-col  bg-sky-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
           <p className="font-bold">CHEESECAKE</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
           <p>New York style cheesecake</p>
         </div>
-        <ImgSection classNames={"md:order-7"} src={Cheesecake} alt="" />
+        <img className={"md:order-7"} src={Cheesecake} alt="" />
         <div className="md:order-9 z-20 justify-center flex flex-col bg-sky-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
           <p className="font-bold">DONUTS</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
           <p>Italian style cream filled donuts</p>
         </div>
-        <ImgSection classNames="md:order-10" src={Donuts} alt="" />
+        <img className="md:order-10" src={Donuts} alt="" />
       </div>
     </motion.div>
   );
 };
 
-function ImgSection({ src, classNames }) {
-  const isScreenMdOrLarger = useMediaQuery({ minWidth: 768 });
-  const hasScroll = isScreenMdOrLarger;
+// function ImgSection({ src, classNames }) {
+//   const isScreenMdOrLarger = useMediaQuery({ minWidth: 768 });
+//   const hasScroll = isScreenMdOrLarger;
 
-  let ref = useRef(null);
-  let { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-  let y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+//   let ref = useRef(null);
+//   let { scrollYProgress } = useScroll({
+//     target: ref,
+//     offset: ["start start", "end start"],
+//   });
+//   let y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
 
-  let imgElement;
-  if (hasScroll) {
-    imgElement = (
-      <motion.img
-        ref={ref}
-        className={classNames}
-        style={{ y }}
-        src={src}
-        alt=""
-      />
-    );
-  } else {
-    imgElement = (
-      <motion.img ref={ref} className={classNames} src={src} alt="" />
-    );
-  }
+//   let imgElement;
+//   if (hasScroll) {
+//     imgElement = (
+//       <motion.img
+//         ref={ref}
+//         className={classNames}
+//         style={{ y }}
+//         src={src}
+//         alt=""
+//       />
+//     );
+//   } else {
+//     imgElement = (
+//       <motion.img ref={ref} className={classNames} src={src} alt="" />
+//     );
+//   }
 
-  return imgElement;
-}
+//   return imgElement;
+// }
 
 
 // function ImgSection({ src, classNames }) {
