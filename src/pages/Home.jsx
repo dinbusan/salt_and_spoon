@@ -55,7 +55,7 @@ const Home = () => {
               </span>
             </p>
             <Link to="/contact">
-              <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto shadow bg-blue-950 hover:bg-blue-800 duration-300 focus:shadow-outline focus:outline-none text-white py-3 px-10 rounded">
+              <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto shadow border-blue-950 border hover:bg-blue-950 hover:text-sky-50 duration-300 focus:shadow-outline focus:outline-none text-blue-950 py-3 px-10 rounded">
                 Contact Us
               </button>{" "}
             </Link>
@@ -65,9 +65,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <Section
+      <Section
         backGround="bg-unicorn"
-        classNames=" w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-4 xl:py-5 mx-auto"
+        classNames=" w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-4 xl:pt-5 mx-auto"
       >
         <p className="my-10 font-thasadith tracking-wider bg-sky-50 bg-opacity-70 p-5 text-center text-xl">
           Serving the <br /> Southington, Connecticut area
@@ -78,10 +78,10 @@ const Home = () => {
           <br />
           Please contact us to place your order.
         </p>
-      </Section> */}
+      </Section>
       <div className="">
-        <div className="bg-sky-50 mt-10 w-screen grid grid-cols-2 md:grid-cols-5">
-          <div className="z-20 text-center pb-10 col-span-2 md:col-span-5 bg-sky-50 w-full font-shadows text-3xl">
+        <div className="bg-sky-50 mt-10  w-screen grid grid-cols-2 md:grid-cols-5">
+          <div className="z-20 text-center py-10 col-span-2 md:col-span-5 bg-sky-50 w-full font-shadows text-3xl">
             <div className="mx-auto h-24 md:h-24 active:scale-75 md:hover:scale-75">
               <a href="https://www.instagram.com/saltandspoonct/">
                 <img
