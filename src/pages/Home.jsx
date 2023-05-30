@@ -66,21 +66,26 @@ const Home = () => {
       </div>
       <Section
         backGround="bg-unicorn"
-        classNames="img-container w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-4 xl:py-5 mx-auto"
+        classNames=" w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-4 xl:py-5 mx-auto"
       >
         <p className="my-10 font-thasadith tracking-wider bg-sky-50 bg-opacity-70 p-5 text-center text-xl">
           Serving the <br /> Southington, Connecticut area
           <br /> since 2017!
           <img className="w-12 my-10 mx-auto" src={Connecticut} />
-          Currently available to book cakes, pies, pastries, and other
-          treats!
+          Currently available to book cakes, pies, pastries, and other treats!
           <br />
           <br />
           Please contact us to place your order.
         </p>
       </Section>
       <div className="">
-        <div className="bg-sky-50 mt-10 img-container px-2 md:px-0 w-screen grid grid-cols-2 md:grid-cols-5 gap-0">
+        <div className="bg-sky-50 mt-10 w-screen grid grid-cols-2 md:grid-cols-5">
+          <div className="z-20 tracking-widest text-center col-span-2 md:col-span-5 py-16 bg-sky-50 w-full font-shadows text-3xl">
+            Follow us{" "}
+            <a href="https://www.instagram.com/saltandspoonct/">
+              @saltandspoonCT
+            </a>
+          </div>
           <div className="aspect-square card-zoom">
             <img
               src="/assets/img1.jpeg"
