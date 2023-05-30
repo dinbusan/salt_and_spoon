@@ -5,6 +5,7 @@ import Welcome from "/assets/welcome-img.jpeg";
 import Connecticut from "/assets/connecticut.png"
 import { Link } from "react-router-dom";
 import Rose from "/assets/rose_cake.png"
+import Follow from "/assets/follow_me.png"
 
 const Home = () => {
   // let ref = useRef(null);
@@ -85,7 +86,7 @@ const Home = () => {
               <a href="https://www.instagram.com/saltandspoonct/">
                 <img
                   className="w-full h-full object-contain"
-                  src="dist/assets/follow_me.png"
+                  src={Follow}
                   alt=""
                 />
               </a>
