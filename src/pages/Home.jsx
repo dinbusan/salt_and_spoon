@@ -1,10 +1,9 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Logo from "/assets/invert.png";
-import Welcome from "/assets/welcome-img.jpeg";
 import Connecticut from "/assets/connecticut.png"
 import { Link } from "react-router-dom";
-import Rose from "/assets/rose_cake.png"
+import Rose from "/assets/rose_cake.jpeg"
 import Follow from "/assets/follow_me.png"
 
 const Home = () => {
@@ -21,7 +20,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative"
+      className=""
     >
       {/* <div ref={ref}>
         <motion.div className=" relative" style={{ y }}>
@@ -65,27 +64,29 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="grid grid-cols-3 mx-auto justify-center">
+        <p>Location</p>
+        <p>Hours</p>
+        <p>Contact</p>
+      </div>
       <Section
         backGround="bg-unicorn"
         classNames=" w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-4 xl:pt-5 mx-auto"
       >
-        <p className="my-10 font-thasadith tracking-wider text-blue-950  bg-sky-50 bg-opacity-80 p-5 text-center text-xl">
+        <p className="my-10 pb-10 font-thasadith tracking-wider text-blue-950  bg-sky-50 bg-opacity-80 p-5 text-center text-xl">
           Serving the <br /> Southington, Connecticut area
           <br /> since 2017!
           <img className="w-12 my-10 mx-auto" src={Connecticut} />
           Currently available to book cakes, pies, pastries, and other treats!
-          <br />
-          <br />
-          Please contact us to place your order.
         </p>
       </Section>
       <div className="">
-        <div className="bg-sky-50 mt-10  w-screen grid grid-cols-2 md:grid-cols-5">
+        <div className="bg-sky-50  w-screen grid grid-cols-2 md:grid-cols-5">
           <div className="z-20 text-center py-10 col-span-2 md:col-span-5 bg-sky-50 w-full font-shadows text-3xl">
-            <div className="mx-auto h-24 md:h-24 active:scale-75 md:hover:scale-75">
+            <div className="mx-auto h-24  ">
               <a href="https://www.instagram.com/saltandspoonct/">
                 <img
-                  className="w-full h-full object-contain"
+                  className="active:scale-75 md:hover:scale-75 w-full h-full object-contain"
                   src={Follow}
                   alt=""
                 />

@@ -10,7 +10,7 @@ export default {
       },
       backgroundImage: {
         bluecake: 'url("/assets/img8_low_contrast.jpeg")',
-        unicorn: 'url("/assets/img6_low_contrast.png")',
+        unicorn: 'url("/assets/img6_low_contrast.jpeg")',
       },
     },
   },

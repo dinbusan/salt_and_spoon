@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Cake from "/assets/tropical_cake.png";
-import Cupcakes from "/assets/cupcake_flowers.png";
-import Pie from "/assets/apple_pie.png";
-import Cheesecake from "/assets/berry_cheesecake.png";
-import Donuts from "/assets/donuts.png";
+import Cake from "/assets/tropical_cake.jpeg";
+import Cupcakes from "/assets/cupcake_flowers.jpeg";
+import Pie from "/assets/apple_pie.jpeg";
+import Cheesecake from "/assets/berry_cheesecake.jpeg";
+import Donuts from "/assets/donuts.jpeg";
 import {useMediaQuery} from "react-responsive"
 
 const Menu = () => {

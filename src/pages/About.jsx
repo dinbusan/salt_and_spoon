@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Welcome from "/assets/welcome-img.jpeg";
+import Welcome from "/assets/welcome-img 2.jpeg";
 
 const About = () => {
   return (
