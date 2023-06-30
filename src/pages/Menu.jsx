@@ -38,9 +38,14 @@ const Menu = () => {
             <br /> Cakes can be decorated and customized to your liking. Tiered
             wedding cakes, birthday cakes, and character cakes are all options!
           </p>
-            <Link to="/cakes">
-              <button type="button">Cakes and flavors</button>
-            </Link>
+          <Link to="/cakes">
+            <button
+              className="mt-4 mx-auto p-2 rounded-md w-1/2 self-center bg-blue-950 font-thasadith text-lg text-blue-50 hover:bg-sky-800 duration-300"
+              type="button"
+            >
+              Cakes and flavors
+            </button>
+          </Link>
         </div>
         <img src={Cake} className={" md:order-2 aspect-square"} />
         {/* <img className="-z-1 md:order-2 aspect-square " src={Cake} alt="" /> */}

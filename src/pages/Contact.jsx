@@ -1,47 +1,44 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import {useForm} from "react-hook-form"
+import { useForm } from "react-hook-form";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaCookieBite } from "react-icons/fa"
+import { FaCookieBite } from "react-icons/fa";
+
 const Contact = () => {
   const {
-    register, 
-    handleSubmit, 
-    formState: {errors, isSubmitting, reset},
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting, reset },
   } = useForm();
 
-  const [isSuccessfullySubmitted, setIsSuccessfullySubmitted] = 
-  React.useState(false);
+  const [isSuccessfullySubmitted, setIsSuccessfullySubmitted] =
+    React.useState(false);
 
-  const postData = ({name}) => {
+  const postData = ({ name }) => {
     return new Promise((resolve) => {
       setTimeout(() => {
         console.log(`${name} saved`);
-        resolve({success: true});
+        resolve({ success: true });
       }, 100);
     });
   };
 
-    const onSubmit = async (data) => {
-      emailjs
-        .send("service_eqp5lv8", "template_54iplxj", data, "zuXt0xHobBClGi0ZB")
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-      const result = await postData(data);
-      setIsSuccessfullySubmitted(result.success);
-    };
-
-    // useEffect(() => {
-    //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    // }, []);
+  const onSubmit = async (data) => {
+    emailjs
+      .send("service_eqp5lv8", "template_54iplxj", data, "zuXt0xHobBClGi0ZB")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    const result = await postData(data);
+    setIsSuccessfullySubmitted(result.success);
+  };
 
   return (
     <motion.div
