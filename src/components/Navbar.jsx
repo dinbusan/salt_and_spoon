@@ -27,7 +27,7 @@ function scrollToTop() {
 }
 
   return (
-    <nav className="bg-sky-950 text-sky-50 duration-300 flex gap-8 px-4 sticky z-30 top-0">
+    <nav className="bg-sky-950 text-blue-50 duration-300 flex gap-8 px-4 sticky z-30 top-0">
       {currentPath === "/" ? (
         <Link
           className={classNames(

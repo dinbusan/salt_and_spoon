@@ -5,7 +5,8 @@ import Cupcakes from "/assets/cupcake_flowers.jpeg";
 import Pie from "/assets/apple_pie.jpeg";
 import Cheesecake from "/assets/berry_cheesecake.jpeg";
 import Donuts from "/assets/donuts.jpeg";
-import {useMediaQuery} from "react-responsive"
+import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -30,10 +31,16 @@ const Menu = () => {
           <p className="font-bold">DECORATED CAKES</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
           <p>
-            Cakes can be decorated and customized to your liking. Tiered wedding
-            cakes, birthday cakes, and character cakes are all options! The most
-            popular flavors are option1, option2, and option3.
+            Cakes are available in 6”, 8” and 10”.
+            <br />
+            Various Size sheet cakes available upon request.
+            <br />
+            <br /> Cakes can be decorated and customized to your liking. Tiered
+            wedding cakes, birthday cakes, and character cakes are all options!
           </p>
+            <Link to="/cakes">
+              <button type="button">Cakes and flavors</button>
+            </Link>
         </div>
         <img src={Cake} className={" md:order-2 aspect-square"} />
         {/* <img className="-z-1 md:order-2 aspect-square " src={Cake} alt="" /> */}
@@ -57,7 +64,11 @@ const Menu = () => {
         <div className="md:order-8 z-20 justify-center flex flex-col  bg-sky-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
           <p className="font-bold">CHEESECAKE</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
-          <p>New York style cheesecake</p>
+          <p>
+            Traditional New York style cheese cake - 8” or 9”
+            <br />
+            50$
+          </p>
         </div>
         <img className={"md:order-7"} src={Cheesecake} alt="" />
         <div className="md:order-9 z-20 justify-center flex flex-col bg-sky-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
@@ -101,7 +112,6 @@ const Menu = () => {
 
 //   return imgElement;
 // }
-
 
 // function ImgSection({ src, classNames }) {
 //   let ref = useRef(null);
