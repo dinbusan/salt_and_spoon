@@ -20,18 +20,27 @@ const Cakes = () => {
               <h1 className="font-bold text-xl lg:text-2xl underline underline-offset-4 py-5">
                 Sizes
               </h1>
-              <ul className="space-y-2 md:text-left">
-                <li>6” cake- $25</li>
-                <li>8” cake- serves up to 20 - $45</li>
-                <li>9” cake- serves up to 24 - $ 50</li>
-                <li>10” cake- serves up to 28 - $ 55</li>
+              <ul className="space-y-2">
+                <li>6” cake - $25</li>
+                <li>
+                  8” cake - <span className="lg:text-sm">serves up to 20</span>{" "}
+                  - $45
+                </li>
+                <li>
+                  9” cake - <span className="lg:text-sm">serves up to 24</span>{" "}
+                  - $ 50
+                </li>
+                <li>
+                  10” cake -<span className="lg:text-sm"> serves up to 28</span>{" "}
+                  - $ 55
+                </li>
               </ul>
             </div>
             <div className="frosting mx-10 lg:mx-16 xl:mx-20">
               <h1 className="font-bold text-xl lg:text-2xl underline underline-offset-4 py-5">
                 Frosting
               </h1>
-              <ul className="space-y-2 md:text-left">
+              <ul className="space-y-2">
                 <li>cream cheese</li>
                 <li>buttercream</li>
               </ul>
@@ -40,7 +49,7 @@ const Cakes = () => {
               <h1 className="font-bold text-xl lg:text-2xl underline underline-offset-4 py-5">
                 Fillings
               </h1>
-              <ul className="space-y-2 md:text-left">
+              <ul className="space-y-2">
                 <li>buttercream</li>
                 <li>cream cheese</li>
                 <li>mousse</li>
