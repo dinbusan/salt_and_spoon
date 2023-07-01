@@ -65,7 +65,7 @@ const Home = () => {
         <div className="flex justify-center my-16">
           <a href="https://www.instagram.com/saltandspoonct/">
             <img
-              className="active:scale-75 md:hover:scale-75 h-24"
+              className="active:scale-75 md:hover:scale-75 h-24 duration-300"
               src={Follow}
               alt=""
             />
@@ -74,18 +74,6 @@ const Home = () => {
       </div>
       <div className="">
         <div className="bg-neutral-100  w-screen grid grid-cols-2 md:grid-cols-5">
-          {/* <div className="z-20 text-center py-10 col-span-2 md:col-span-5 bg-sky-100 w-full font-shadows text-3xl">
-            <div className="mx-auto h-24  ">
-              <a href="https://www.instagram.com/saltandspoonct/">
-                <img
-                  className="active:scale-75 md:hover:scale-75 w-full h-full object-contain"
-                  src={Follow}
-                  alt=""
-                />
-              </a>
-            </div>
-          </div> */}
-
           <div className="aspect-square card-zoom">
             <img
               src="/assets/img1.jpeg"
