@@ -54,7 +54,9 @@ const Menu = () => {
           <p className="font-bold">CUPCAKES</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
           <p className="">
-            Cupcake flower baskets, centerpieces, and boards available as well!
+            Cupcake flower baskets, centerpieces, and boards available as well!<br/>
+            Traditional flavor cupcakes with buttercream frosting - $2.75 ea <br/>
+            Specialty flavors -$3.00/ ea
           </p>
         </div>
         <img className={"md:order-3"} src={Cupcakes} alt="" />
