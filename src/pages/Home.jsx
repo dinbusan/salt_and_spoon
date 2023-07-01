@@ -48,25 +48,33 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 mx-auto justify-center">
+      {/* <div className="grid grid-cols-3 mx-auto justify-center">
         <p>Location</p>
         <p>Hours</p>
         <p>Contact</p>
-      </div>
-      <Section
-        backGround="bg-unicorn"
-        classNames=" w-3/4 sm:w-2/3 md:w-2/5 lg:w-3/4 xl:w-2/5 py-4 xl:pt-5 mx-auto"
-      >
+      </div> */}
+      <div className="bg-unicorn py-4 xl:pt-5 mx-auto bg-cover bg-center ">
         <p className="my-10 pb-10 font-thasadith tracking-wider text-blue-950  bg-sky-50 bg-opacity-80 p-5 text-center text-xl">
           Serving the <br /> Southington, Connecticut area
           <br /> since 2017!
           <img className="w-12 my-10 mx-auto" src={Connecticut} />
           Currently available to book cakes, pies, pastries, and other treats!
         </p>
-      </Section>
+      </div>
+      <div className="bg-sky-50 z-20">
+        <div className="flex justify-center my-16">
+          <a href="https://www.instagram.com/saltandspoonct/">
+            <img
+              className="active:scale-75 md:hover:scale-75 h-24"
+              src={Follow}
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
       <div className="">
         <div className="bg-sky-50  w-screen grid grid-cols-2 md:grid-cols-5">
-          <div className="z-20 text-center py-10 col-span-2 md:col-span-5 bg-sky-50 w-full font-shadows text-3xl">
+          {/* <div className="z-20 text-center py-10 col-span-2 md:col-span-5 bg-sky-50 w-full font-shadows text-3xl">
             <div className="mx-auto h-24  ">
               <a href="https://www.instagram.com/saltandspoonct/">
                 <img
@@ -76,7 +84,7 @@ const Home = () => {
                 />
               </a>
             </div>
-          </div>
+          </div> */}
 
           <div className="aspect-square card-zoom">
             <img
