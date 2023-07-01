@@ -27,7 +27,7 @@ function scrollToTop() {
 }
 
   return (
-    <nav className="bg-sky-950 text-blue-50 duration-300 flex gap-8 px-4 sticky z-30 top-0">
+    <nav className="bg-neutral-900 text-neutral-50 duration-300 flex gap-8 px-4 sticky z-30 top-0">
       {currentPath === "/" ? (
         <Link
           className={classNames(
@@ -94,7 +94,7 @@ function scrollToTop() {
         className={
           !nav
             ? "hidden"
-            : "fixed top-0 font-thasadith left-0 w-full h-screen bg-sky-950 object-cover flex flex-col pt-36 items-center"
+            : "fixed top-0 font-thasadith left-0 w-full h-screen bg-neutral-900 object-cover flex flex-col pt-36 items-center"
         }
       >
         <li className="py-6 text-4xl">

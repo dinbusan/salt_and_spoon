@@ -81,10 +81,10 @@ const Contact = () => {
             </p>
             <div className="justify-center pt-4 flex text-3xl">
               <a href="https://www.instagram.com/saltandspoonct/">
-                <FaInstagram className="mx-3 hover:text-blue-400 duration-300" />
+                <FaInstagram className="mx-3 hover:text-neutral-400 duration-300" />
               </a>
               <a href="https://www.facebook.com/saltandspoonct">
-                <FaFacebook className="mx-3 hover:text-blue-400 duration-300" />
+                <FaFacebook className="mx-3 hover:text-neutral-400 duration-300" />
               </a>
             </div>
           </div>
@@ -168,7 +168,7 @@ const Contact = () => {
                 )}
                 <button
                   type="submit"
-                  className="mt-4 flex justify-center p-2 rounded-md w-1/2 self-center bg-blue-950 font-thasadith text-lg text-blue-50 hover:bg-sky-800 duration-300"
+                  className="mt-4 flex justify-center p-2 rounded-md w-1/2 self-center bg-neutral-900 font-thasadith text-lg text-neutral-50 hover:bg-neutral-800 duration-300"
                 >
                   Send
                 </button>

@@ -20,7 +20,7 @@ const Home = () => {
         src={Logo}
         classNames="w-3/4 sm:w-2/3 md:w-2/5 lg:w-2/3 xl:w-2/5 py-2 xl:py-5 mx-auto"
       />
-      <div className="z-1 relative w-screen bg-sky-50 pt-5">
+      <div className="z-1 relative w-screen bg-neutral-50 pt-5">
         <div className=" w-5/6 my-5 md:my-6 mx-auto grid grid-cols-1 md:grid-cols-5 bg-white">
           <div className="md:col-span-3 py-5 md:pt-10 xl:pt-10">
             <h1 className="font-shadows tracking-wider text-4xl xl:text-6xl text-center justify-center flex py-5 md:py-10">
@@ -38,7 +38,7 @@ const Home = () => {
               </span>
             </p>
             <Link to="/contact">
-              <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto shadow border-blue-950 border hover:bg-blue-950 hover:text-sky-50 duration-300 focus:shadow-outline focus:outline-none text-blue-950 py-3 px-10 rounded">
+              <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto shadow border-neutral-900 border hover:bg-neutral-900 hover:text-neutral-50 duration-300 focus:shadow-outline focus:outline-none text-neutral-900 py-3 px-10 rounded">
                 Contact Us
               </button>{" "}
             </Link>
@@ -54,14 +54,14 @@ const Home = () => {
         <p>Contact</p>
       </div> */}
       <div className="bg-unicorn py-4 xl:pt-5 mx-auto bg-cover bg-center ">
-        <p className="my-10 pb-10 font-thasadith tracking-wider text-blue-950  bg-sky-50 bg-opacity-80 p-5 text-center text-xl">
+        <p className="my-10 pb-10 font-thasadith tracking-wider text-neutral-950  bg-neutral-50 bg-opacity-80 p-5 text-center text-xl">
           Serving the <br /> Southington, Connecticut area
           <br /> since 2017!
           <img className="w-12 my-10 mx-auto" src={Connecticut} />
           Currently available to book cakes, pies, pastries, and other treats!
         </p>
       </div>
-      <div className="bg-sky-50 z-20">
+      <div className="bg-neutral-50 z-20">
         <div className="flex justify-center my-16">
           <a href="https://www.instagram.com/saltandspoonct/">
             <img
@@ -73,7 +73,7 @@ const Home = () => {
         </div>
       </div>
       <div className="">
-        <div className="bg-sky-50  w-screen grid grid-cols-2 md:grid-cols-5">
+        <div className="bg-neutral-50  w-screen grid grid-cols-2 md:grid-cols-5">
           {/* <div className="z-20 text-center py-10 col-span-2 md:col-span-5 bg-sky-50 w-full font-shadows text-3xl">
             <div className="mx-auto h-24  ">
               <a href="https://www.instagram.com/saltandspoonct/">

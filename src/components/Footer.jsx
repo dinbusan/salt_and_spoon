@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="z-20 sticky top-[100vh] text-center bg-sky-950 text-sky-50 p-5 tracking-wider text-xs font-thasadith">
+    <footer className="z-20 sticky top-[100vh] text-center bg-neutral-900 text-neutral-50 p-5 tracking-wider text-xs font-thasadith">
       <div>
         <p className="leading-4">
           Salt & Spoon CT
@@ -21,10 +21,10 @@ const Footer = () => {
         </p>
         <div className="justify-center pt-1 flex text-lg ">
           <a href="https://www.instagram.com/saltandspoonct/">
-            <FaInstagram className="mx-1 hover:text-blue-400 duration-300" />
+            <FaInstagram className="mx-1 hover:text-neutral-400 duration-300" />
           </a>
           <a href="https://www.facebook.com/saltandspoonct">
-            <FaFacebook className="mx-1 hover:text-blue-400 duration-300" />
+            <FaFacebook className="mx-1 hover:text-neutral-400 duration-300" />
           </a>
         </div>
       </div>

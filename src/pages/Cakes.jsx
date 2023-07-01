@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Cakes = () => {
   return (
@@ -11,8 +12,21 @@ const Cakes = () => {
         transition={{ duration: 0.5 }}
         className="pb-5 font-thasadith lg:text-lg xl:text-xl"
       >
-        <div className="bg-sky-950 text-blue-50 text-center font-thasadith tracking-wider text-3xl md:text-4xl xl:text-5xl py-16 -mt-1">
-          CAKES
+        <div className="bg-neutral-900 text-neutral-50 text-center font-thasadith tracking-wider text-3xl md:text-4xl xl:text-5xl pt-16 pb-10 -mt-1">
+          CAKE MENU
+          <hr className="w-10 h-0.5 mx-auto mt-4 mb-5 bg-neutral-50 border-0" />
+          <p className="text-neutral-50 font-thasadith text-center mx-auto text-xl tracking-wider my-10 w-5/6 md:w-1/2">
+            Various Size sheet cakes available upon request.
+            <br />
+            <br /> Cakes can be decorated and customized to your liking. <br />
+            Tiered wedding cakes, birthday cakes, and character cakes are all
+            options!
+          </p>
+          <Link to="/contact">
+            <button className="block text-sm mt-5 tracking-widest font-thasadith uppercase mx-auto shadow border-neutral-50 border hover:bg-neutral-400 hover:text-neutral-50 duration-300 focus:shadow-outline focus:outline-none text-neutral-50 py-3 px-10 rounded">
+              Contact Us
+            </button>{" "}
+          </Link>
         </div>
         <div className="list text-center mx-10">
           <div className="md:flex justify-center">
@@ -36,7 +50,7 @@ const Cakes = () => {
                 </li>
               </ul>
             </div>
-            <div className="frosting mx-10 lg:mx-16 xl:mx-20">
+            <div className="frosting xl:pr-12 mx-10 lg:mx-16 xl:mx-20">
               <h1 className="font-bold text-xl lg:text-2xl underline underline-offset-4 py-5">
                 Frosting
               </h1>
@@ -45,7 +59,7 @@ const Cakes = () => {
                 <li>buttercream</li>
               </ul>
             </div>
-            <div className="fillings mx-10 lg:mx-16 xl:mx-20">
+            <div className="fillings mx-10 xl:pr-24 lg:mx-16 xl:mx-20">
               <h1 className="font-bold text-xl lg:text-2xl underline underline-offset-4 py-5">
                 Fillings
               </h1>
@@ -58,11 +72,7 @@ const Cakes = () => {
             </div>
           </div>
           <div className="notes pt-10 justify-center flex">
-            <p>
-              Tiered cakes and sheet cake also available
-              <br />
-              Specialty designs - added cost accordingly
-            </p>
+            <p>Specialty designs - cost added accordingly</p>
           </div>
           <div>
             <div className="flavors">
