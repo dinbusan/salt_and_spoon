@@ -22,11 +22,18 @@ const Cakes = () => {
             Tiered wedding cakes, birthday cakes, and character cakes are all
             options!
           </p>
-          <Link to="/contact">
-            <button className="block text-sm mt-5 tracking-widest font-thasadith uppercase mx-auto shadow border-neutral-100 border hover:bg-neutral-400 hover:text-neutral-100 duration-300 focus:shadow-outline focus:outline-none text-neutral-100 py-3 px-10 rounded">
-              Contact Us
-            </button>{" "}
-          </Link>
+          <div className="md:flex justify-center ">
+            <Link to="/assets/salt_spoon_menu.pdf" target="_blank" download>
+              <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto md:mx-5 shadow border-neutral-100 border hover:bg-neutral-400 hover:text-neutral-100 duration-300 focus:shadow-outline focus:outline-none text-neutral-100 py-3 px-6 rounded">
+                Download Menu
+              </button>{" "}
+            </Link>
+            <Link to="/contact">
+              <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto shadow border-neutral-100 border hover:bg-neutral-400 hover:text-neutral-100 duration-300 focus:shadow-outline focus:outline-none text-neutral-100 py-3 px-10 rounded">
+                Contact Me
+              </button>{" "}
+            </Link>
+          </div>
         </div>
         <div className="list text-center mx-10">
           <div className="md:flex justify-center">

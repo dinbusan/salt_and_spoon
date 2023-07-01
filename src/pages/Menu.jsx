@@ -26,11 +26,19 @@ const Menu = () => {
           we can work together to make it happen! Below are some of my most
           popular menu items.
         </p>
-        <Link to="/contact">
-          <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto shadow border-neutral-100 border hover:bg-neutral-400 hover:text-neutral-100 duration-300 focus:shadow-outline focus:outline-none text-neutral-100 py-3 px-10 rounded">
-            Contact Me
-          </button>{" "}
-        </Link>
+        <div className="md:flex justify-center ">
+          <Link to="/assets/salt_spoon_menu.pdf" target="_blank" download>
+
+            <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto md:mx-5 shadow border-neutral-100 border hover:bg-neutral-400 hover:text-neutral-100 duration-300 focus:shadow-outline focus:outline-none text-neutral-100 py-3 px-6 rounded">
+              Download Menu
+            </button>{" "}
+          </Link>
+          <Link to="/contact">
+            <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto shadow border-neutral-100 border hover:bg-neutral-400 hover:text-neutral-100 duration-300 focus:shadow-outline focus:outline-none text-neutral-100 py-3 px-10 rounded">
+              Contact Me
+            </button>{" "}
+          </Link>
+        </div>
       </div>
       <div className="md:grid md:grid-cols-2 xl:w-2/3 mx-auto">
         <div className="md:order-1 justify-center flex flex-col  bg-neutral-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
