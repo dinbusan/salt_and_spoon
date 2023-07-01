@@ -168,7 +168,7 @@ const Contact = () => {
                 )}
                 <button
                   type="submit"
-                  className="mt-4 flex justify-center p-2 rounded-md w-1/2 self-center bg-neutral-900 font-thasadith text-lg text-neutral-50 hover:bg-neutral-800 duration-300"
+                  className="mt-4 flex justify-center p-2 rounded-md w-1/2 self-center bg-neutral-900 font-thasadith text-lg text-neutral-100 hover:bg-neutral-800 duration-300"
                 >
                   Send
                 </button>

@@ -11,10 +11,10 @@ const About = () => {
       transition={{ duration: 0.5 }}
       className="pb-5"
     >
-      <div className="bg-neutral-900 w-full text-neutral-50 text-center font-thasadith tracking-wider text-3xl md:text-4xl xl:text-5xl py-16 -mt-1">
+      <div className="bg-neutral-900 w-full text-neutral-100 text-center font-thasadith tracking-wider text-3xl md:text-4xl xl:text-5xl pt-16 pb-10 -mt-1">
         MY STORY
       </div>
-      <div className="md:grid md:grid-cols-2 xl:grid-cols-4 md:my-10 md:mr-5 bg-neutral-50">
+      <div className="md:grid md:grid-cols-2 xl:grid-cols-4 md:my-10 md:mr-5 bg-neutral-100">
         <img
           className="aspect-square md:aspect-auto md:order-2  object-cover object-top"
           src={Welcome}

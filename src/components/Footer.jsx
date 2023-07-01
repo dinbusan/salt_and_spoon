@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="z-20 sticky top-[100vh] text-center bg-neutral-900 text-neutral-50 p-5 tracking-wider text-xs font-thasadith">
+    <footer className="z-20 sticky top-[100vh] text-center bg-neutral-900 text-neutral-100 p-5 tracking-wider text-xs font-thasadith">
       <div>
         <p className="leading-4">
           Salt & Spoon CT

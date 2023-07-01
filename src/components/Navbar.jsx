@@ -27,7 +27,7 @@ function scrollToTop() {
 }
 
   return (
-    <nav className="bg-neutral-900 text-neutral-50 duration-300 flex gap-8 px-4 sticky z-30 top-0">
+    <nav className="bg-neutral-900 text-neutral-100 duration-300 flex gap-8 px-4 sticky z-30 top-0">
       {currentPath === "/" ? (
         <Link
           className={classNames(

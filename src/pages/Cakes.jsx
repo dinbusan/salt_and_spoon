@@ -12,10 +12,10 @@ const Cakes = () => {
         transition={{ duration: 0.5 }}
         className="pb-5 font-thasadith lg:text-lg xl:text-xl"
       >
-        <div className="bg-neutral-900 text-neutral-50 text-center font-thasadith tracking-wider text-3xl md:text-4xl xl:text-5xl pt-16 pb-10 -mt-1">
+        <div className="bg-neutral-900 text-neutral-100 text-center font-thasadith tracking-wider text-3xl md:text-4xl xl:text-5xl pt-16 pb-10 -mt-1">
           CAKE MENU
-          <hr className="w-10 h-0.5 mx-auto mt-4 mb-5 bg-neutral-50 border-0" />
-          <p className="text-neutral-50 font-thasadith text-center mx-auto text-xl tracking-wider my-10 w-5/6 md:w-1/2">
+          <hr className="w-10 h-0.5 mx-auto mt-4 mb-5 bg-neutral-100 border-0" />
+          <p className="text-neutral-100 font-thasadith text-center mx-auto text-xl tracking-wider my-10 w-5/6 md:w-1/2">
             Various Size sheet cakes available upon request.
             <br />
             <br /> Cakes can be decorated and customized to your liking. <br />
@@ -23,7 +23,7 @@ const Cakes = () => {
             options!
           </p>
           <Link to="/contact">
-            <button className="block text-sm mt-5 tracking-widest font-thasadith uppercase mx-auto shadow border-neutral-50 border hover:bg-neutral-400 hover:text-neutral-50 duration-300 focus:shadow-outline focus:outline-none text-neutral-50 py-3 px-10 rounded">
+            <button className="block text-sm mt-5 tracking-widest font-thasadith uppercase mx-auto shadow border-neutral-100 border hover:bg-neutral-400 hover:text-neutral-100 duration-300 focus:shadow-outline focus:outline-none text-neutral-100 py-3 px-10 rounded">
               Contact Us
             </button>{" "}
           </Link>
