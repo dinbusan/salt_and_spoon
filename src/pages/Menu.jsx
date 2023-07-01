@@ -5,6 +5,7 @@ import Cupcakes from "/assets/cupcake_flowers.jpeg";
 import Pie from "/assets/apple_pie.jpeg";
 import Cheesecake from "/assets/berry_cheesecake.jpeg";
 import Donuts from "/assets/donuts.jpeg";
+import Cookies from "/assets/cookies.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 
@@ -82,72 +83,15 @@ const Menu = () => {
           <p>Italian style cream filled donuts</p>
         </div>
         <img className="md:order-10" src={Donuts} alt="" />
+        <div className="md:order-12 z-20 justify-center flex flex-col bg-sky-50 h-full font-thasadith tracking-wider text-xl text-center p-5">
+          <p className="font-bold">Cookies</p>
+          <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
+          <p>Assorted cookie trays - $ 11.99/lb</p>
+        </div>
+        <img className="md:order-11" src={Cookies} alt="" />
       </div>
     </motion.div>
   );
 };
-
-// function ImgSection({ src, classNames }) {
-//   const isScreenMdOrLarger = useMediaQuery({ minWidth: 768 });
-//   const hasScroll = isScreenMdOrLarger;
-
-//   let ref = useRef(null);
-//   let { scrollYProgress } = useScroll({
-//     target: ref,
-//     offset: ["start start", "end start"],
-//   });
-//   let y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-
-//   let imgElement;
-//   if (hasScroll) {
-//     imgElement = (
-//       <motion.img
-//         ref={ref}
-//         className={classNames}
-//         style={{ y }}
-//         src={src}
-//         alt=""
-//       />
-//     );
-//   } else {
-//     imgElement = (
-//       <motion.img ref={ref} className={classNames} src={src} alt="" />
-//     );
-//   }
-
-//   return imgElement;
-// }
-
-// function ImgSection({ src, classNames }) {
-//   let ref = useRef(null);
-//   let { scrollYProgress } = useScroll({
-//     target: ref,
-//     offset: ["end end", "end start"],
-//   });
-//   let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-//   return (
-//     <motion.img
-//       ref={ref}
-//     className={classNames}
-//       style={{ y }}
-//       src={src}
-//       alt=""
-//     />
-//   );
-// }
-
-// function TextSection({ children, classNames }) {
-//   let ref = useRef(null);
-//   let { scrollYProgress } = useScroll({
-//     target: ref,
-//     offset: ["end end", "end start"],
-//   });
-//   let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-//   return (
-//     <motion.div ref={ref} style={{ y }} className={classNames}>
-//       {children}
-//     </motion.div>
-//   );
-// }
 
 export default Menu;
