@@ -28,7 +28,6 @@ const Menu = () => {
         </p>
         <div className="md:flex justify-center ">
           <Link to="/assets/salt_spoon_menu.pdf" target="_blank" download>
-
             <button className="block text-sm mt-5 xl:mt-1 tracking-widest font-thasadith uppercase mx-auto md:mx-5 shadow border-neutral-100 border hover:bg-neutral-400 hover:text-neutral-100 duration-300 focus:shadow-outline focus:outline-none text-neutral-100 py-3 px-6 rounded">
               Download Menu
             </button>{" "}
@@ -79,8 +78,8 @@ const Menu = () => {
           <p className="font-bold">PIES</p>
           <hr className="w-10 h-0.5 mx-auto mt-2 mb-5 bg-gray-900 border-0" />
           <p>
-            Most popular flavors include Salted Apple Caramel (pictured),
-            Option2, Option3
+            Explore our tasty pie options, baked daily using only the finest
+            ingredients. Pictured is Salted Apple Caramel.
           </p>
         </div>
         <img className={"md:order-6 "} src={Pie} alt="" />
