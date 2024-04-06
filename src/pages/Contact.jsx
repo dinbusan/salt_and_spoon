@@ -27,7 +27,7 @@ const Contact = () => {
 
   const onSubmit = async (data) => {
     emailjs
-      .send("service_eqp5lv8", "template_54iplxj", data, "zuXt0xHobBClGi0ZB")
+      .send("service_qzb527l", "template_79ibtks", data, "zuXt0xHobBClGi0ZB")
       .then(
         (result) => {
           console.log(result.text);

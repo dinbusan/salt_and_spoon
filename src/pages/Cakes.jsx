@@ -90,7 +90,7 @@ const Cakes = () => {
                 <li>
                   <span className="font-bold">PBDC (Our Rock Star) -</span> Our
                   signature dark chocolate cake with peanut butter, cream
-                  filling & buttercream frosting
+                  filling & buttercream frosting.
                 </li>
                 <li>
                   <span className="font-bold">Lemon Razzy -</span> White vanilla
@@ -100,7 +100,7 @@ const Cakes = () => {
                 <li>
                   <span className="font-bold">Mom’s Tiramisu Coffee -</span>{" "}
                   flavored white cake with mascarpone coffee filling &
-                  buttercream frosting
+                  buttercream frosting.
                 </li>
                 <li>
                   <span className="font-bold">Toasted Almond Crunch -</span>{" "}
@@ -115,7 +115,7 @@ const Cakes = () => {
                 <li>
                   <span className="font-bold">Cookies and Cream -</span>{" "}
                   Chocolate cake with cookie crumble filling & vanilla
-                  buttercream frosting
+                  buttercream frosting.
                 </li>
                 <li>
                   <span className="font-bold">Gimme Smores -</span> Our
@@ -126,19 +126,19 @@ const Cakes = () => {
                 <li>
                   <span className="font-bold">Blueberry Bliss -</span> White
                   cake with fresh blueberries, mascarpone filling & buttercream
-                  frosting{" "}
+                  frosting.{" "}
                 </li>
                 <li>
                   <span className="font-bold">
                     Not your Mother’s Carrot Cake -
                   </span>{" "}
                   Spiced cake with coconut, raisins, pineapple & cream cheese
-                  topped with buttercream frosting{" "}
+                  topped with buttercream frosting.{" "}
                 </li>
                 <li>
                   <span className="font-bold">Coffee Crunch -</span> Dark
                   chocolate cake with decadent chocolate fudge, dipped in toffee
-                  pieces with fresh whipped cream{" "}
+                  pieces with fresh whipped cream.{" "}
                 </li>
                 <li>
                   <span className="font-bold">Strawberries & Champagne -</span>{" "}
@@ -148,12 +148,12 @@ const Cakes = () => {
                 <li>
                   <span className="font-bold">Blackberry Dream -</span>{" "}
                   Chocolate cake with mascarpone filling, blackberry buttercream
-                  frosting & fresh blackberries{" "}
+                  frosting & fresh blackberries.{" "}
                 </li>
                 <li>
                   <span className="font-bold">Nonna’s Cannoli -</span> White
                   cake with mascarpone & cream cheese filling with fresh whipped
-                  cream frosting{" "}
+                  cream frosting.{" "}
                 </li>
                 <li>
                   <span className="font-bold">Birthday Bombs -</span> White cake

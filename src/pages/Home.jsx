@@ -63,9 +63,9 @@ const Home = () => {
       </div>
       <div className="bg-neutral-100 z-20">
         <div className="flex justify-center my-16">
-          <a href="https://www.instagram.com/saltandspoonct/">
+          <a href="https://www.instagram.com/saltandspoonct/" target="_blank">
             <img
-              className="active:scale-75 md:hover:scale-75 h-24 duration-300"
+              className="active:scale-95 md:hover:scale-95 h-24 duration-300"
               src={Follow}
               alt=""
             />
